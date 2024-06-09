@@ -1,0 +1,33 @@
+// Google font
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
+
+/* Colors */
+$dark: #080808;
+$darkgrey: rgb(45, 51, 56);
+$lightblue: #7bb9fc;
+$blue: #0050c7;
+$bluedots: #5077FF;
+$black: #000000;
+$white: #ffffff;
+$whitegrey: #FAFAFA;
+$grey: #bbbbbb;
+
+// Reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  &::selection {
+    background: $lightblue;
+    color: $dark;
+  }
+}
+
+// Global
+html {
+	font-size: 62.5%; // 1rem = 10px
+	font-family: 'Inter', sans-serif;
+	scrollbar-width: none;
+	overflow-x: hidden;
+}
