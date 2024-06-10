@@ -172,7 +172,7 @@ html {
   transform: translateX(100%);
   transition: transform 0.3s linear;
   text-align: end;
-  height: 91vh;
+  height: 91dvh;
   width: 80vw;
   background-color: #ffffff;
   z-index: 999999;
@@ -195,11 +195,11 @@ html {
 #MenuMobile.open::after {
   content: "";
   position: fixed;
-  bottom: 0;
-  left: 0;
+  top: 10vh;
+  right: 0;
   z-index: 999;
   width: 100vw;
-  height: 90vh;
+  height: 90dvh;
   background-color: rgba(123, 185, 252, 0.2352941176);
   animation: slideIn 0.45s forwards;
 }
