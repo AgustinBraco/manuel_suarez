@@ -1,0 +1,72 @@
+#MenuMobile {
+  .MobileButton {
+    background-image: url('/menu.png');
+    background-size: 2.5rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    background-color: $blue;
+    width: 5rem;
+    height: 5rem;
+    transition: background-image 0.35s ease;
+  }
+
+  .MobileButton.open {
+    background-image: url('/close.png');
+    animation: bubbleOn 5s ease-in-out infinite;
+    transition: 0.35s linear 0s;
+  }
+
+  .MobileButton.close {
+    background-image: url('/menu.png');
+    animation: bubbleOff 1s linear;
+    transition: 0.35s linear 0s;
+  }
+
+  .MobileNav {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: none;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    transform: translateX(100%);
+    transition: transform 0.3s linear;
+    text-align: end;
+    height: 91vh;
+    width: 80vw;
+    background-color: $white;
+    z-index: 999999;
+
+    .MobileNavSocials {
+      display: flex;
+      flex-flow: column nowrap;
+      gap: 1.3rem;
+      padding: 2.5rem;
+    }
+  }
+
+  .MobileNav.open {
+    display: flex;
+    animation: slideIn 0.4s forwards;
+  }
+
+  .MobileNav.close {
+    display: flex;
+    animation: slideOut 0.4s forwards;
+  }
+}
+
+#MenuMobile.open {
+  &::after {
+    content: '';
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    width: 100vw;
+    height: 90vh;
+    background-color: #7bb9fc3c;
+    animation: slideIn 0.45s forwards;
+  }
+}

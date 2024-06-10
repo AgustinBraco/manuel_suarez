@@ -1,9 +1,10 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Landing, Radio, Contact } from './screens';
-import { Header, Footer } from './components';
+import { Header, Footer, TopScroll } from './components';
 
 const App = () => (
 	<Router>
+		<TopScroll />
 		<Header />
 		<Routes>
 			<Route exact path="/" element={<Landing />} />

@@ -1,0 +1,14 @@
+#Logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .LogoImage {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .LogoWrapper {
+    display: none;
+  }
+}

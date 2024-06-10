@@ -7,7 +7,7 @@
 }
 *::selection {
   background: #7bb9fc;
-  color: #080808;
+  color: #2D3338;
 }
 
 html {
@@ -15,6 +15,238 @@ html {
   font-family: "Inter", sans-serif;
   scrollbar-width: none;
   overflow-x: hidden;
+  cursor: url("/cursor.png"), pointer;
+}
+
+@keyframes bubbleOn {
+  0% {
+    border-radius: 50%;
+  }
+  20% {
+    border-radius: 51% 49% 51% 49%/72% 73% 27% 28%;
+  }
+  40% {
+    border-radius: 29% 71% 68% 32%/72% 48% 52% 28%;
+  }
+  60% {
+    border-radius: 31% 69% 33% 67%/57% 52% 48% 43%;
+  }
+  80% {
+    border-radius: 51% 49% 51% 49%/72% 73% 27% 28%;
+  }
+  100% {
+    border-radius: 50%;
+  }
+}
+@keyframes bubbleOff {
+  from {
+    border-radius: 31% 69% 33% 67%/57% 52% 48% 43%;
+  }
+  to {
+    border-radius: 50%;
+  }
+}
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+#Landing {
+  height: 300rem;
+  background-color: #bbbbbb;
+}
+
+#Contact {
+  height: 300rem;
+  background-color: #bbbbbb;
+}
+
+#Radio {
+  height: 300rem;
+  background-color: #bbbbbb;
+}
+
+#TopScroll {
+  width: 0%;
+  height: 0.6rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #4382C3;
+  z-index: 9999999;
+}
+
+#Logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Logo .LogoImage {
+  width: 5rem;
+  height: 5rem;
+}
+#Logo .LogoWrapper {
+  display: none;
+}
+
+.SocialLink {
+  text-decoration: none;
+  color: #4382C3;
+  font-weight: 800;
+  font-size: 1.45rem;
+}
+
+.MenuLinksWrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  height: 70%;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+.MenuLinksWrapper .MenuLink {
+  text-decoration: none;
+  color: #2D3338;
+  font-size: 2.2rem;
+  font-weight: 600;
+  letter-spacing: 0.15rem;
+  padding-right: 2.5rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: end;
+  align-items: center;
+  gap: 1rem;
+}
+.MenuLinksWrapper .MenuCircle {
+  content: "";
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 100%;
+  background-color: #4382C3;
+  opacity: 0.4;
+}
+.MenuLinksWrapper .MenuLinkContact {
+  color: #4382C3;
+}
+
+#MenuMobile .MobileButton {
+  background-image: url("/menu.png");
+  background-size: 2.5rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  background-color: #4382C3;
+  width: 5rem;
+  height: 5rem;
+  transition: background-image 0.35s ease;
+}
+#MenuMobile .MobileButton.open {
+  background-image: url("/close.png");
+  animation: bubbleOn 5s ease-in-out infinite;
+  transition: 0.35s linear 0s;
+}
+#MenuMobile .MobileButton.close {
+  background-image: url("/menu.png");
+  animation: bubbleOff 1s linear;
+  transition: 0.35s linear 0s;
+}
+#MenuMobile .MobileNav {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: none;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  transform: translateX(100%);
+  transition: transform 0.3s linear;
+  text-align: end;
+  height: 91vh;
+  width: 80vw;
+  background-color: #ffffff;
+  z-index: 999999;
+}
+#MenuMobile .MobileNav .MobileNavSocials {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1.3rem;
+  padding: 2.5rem;
+}
+#MenuMobile .MobileNav.open {
+  display: flex;
+  animation: slideIn 0.4s forwards;
+}
+#MenuMobile .MobileNav.close {
+  display: flex;
+  animation: slideOut 0.4s forwards;
+}
+
+#MenuMobile.open::after {
+  content: "";
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  width: 100vw;
+  height: 90vh;
+  background-color: rgba(123, 185, 252, 0.2352941176);
+  animation: slideIn 0.45s forwards;
+}
+
+#Header {
+  display: flex;
+  height: 10vh;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 1.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+}
+
+.PersonLink {
+  text-decoration: none;
+  color: #4382C3;
+}
+.PersonLink .PersonLinkText {
+  font-size: 1.25rem;
+}
+
+#Footer {
+  width: 100vw;
+  background-color: #ffffff;
+}
+#Footer .FooterTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+#Footer .FooterTop .FooterTopWrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: end;
+  gap: 1rem;
+}
+#Footer .FooterLine {
+  border-color: #4382C3;
+  margin-inline: 1.5rem;
+  border-radius: 1rem;
+}
+#Footer .FooterBottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.2rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

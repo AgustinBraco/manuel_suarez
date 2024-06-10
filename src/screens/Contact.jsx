@@ -1,1 +1,1 @@
-export const Contact = () => <main></main>;
+export const Contact = () => <main id="Contact"></main>;

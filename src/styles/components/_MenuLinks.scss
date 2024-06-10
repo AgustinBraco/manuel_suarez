@@ -1,0 +1,34 @@
+.MenuLinksWrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  height: 70%;
+  justify-content: space-evenly;
+  gap: 1rem;
+
+  .MenuLink {
+    text-decoration: none;
+    color: $grey;
+    font-size: 2.2rem;
+    font-weight: 600;
+    letter-spacing: 0.15rem;
+    padding-right: 2.5rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: end;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .MenuCircle {
+    content: '';
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 100%;
+    background-color: $blue;
+    opacity: 0.4;
+  }
+
+  .MenuLinkContact {
+    color: $blue;
+  }
+}

@@ -1,0 +1,30 @@
+#Footer {
+  width: 100vw;
+  background-color: $white;
+
+  .FooterTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+
+    .FooterTopWrapper {
+      display: flex;
+      flex-flow: column nowrap;
+      text-align: end;
+      gap: 1rem;
+    }
+  }
+
+  .FooterLine {
+    border-color: $blue;
+    margin-inline: 1.5rem;
+    border-radius: 1rem;
+  }
+
+  .FooterBottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2rem;
+  }
+}

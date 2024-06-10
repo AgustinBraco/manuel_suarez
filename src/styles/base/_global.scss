@@ -2,15 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
 
 /* Colors */
-$dark: #080808;
-$darkgrey: rgb(45, 51, 56);
+$blue: #4382C3;
 $lightblue: #7bb9fc;
-$blue: #0050c7;
-$bluedots: #5077FF;
+$grey: #2D3338;
+$lightgrey: #bbbbbb; 
 $black: #000000;
 $white: #ffffff;
-$whitegrey: #FAFAFA;
-$grey: #bbbbbb;
+
+// Cursors
+$cursor: url('/cursor.png');
+$pointer: url('/pointer.png');
 
 // Reset
 * {
@@ -20,7 +21,7 @@ $grey: #bbbbbb;
 
   &::selection {
     background: $lightblue;
-    color: $dark;
+    color: $grey;
   }
 }
 
@@ -30,4 +31,5 @@ html {
 	font-family: 'Inter', sans-serif;
 	scrollbar-width: none;
 	overflow-x: hidden;
-}
+  cursor: $cursor, pointer;
+} 

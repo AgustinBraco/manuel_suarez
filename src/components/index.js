@@ -1,2 +1,9 @@
+export { Logo } from './Logo.jsx';
+export { SocialLink } from './SocialLink.jsx';
+export { MenuLinks } from './MenuLinks.jsx';
+export { MenuMobile } from './MenuMobile.jsx';
+export { MenuDesktop } from './MenuDesktop.jsx';
+export { TopScroll } from './TopScroll.jsx';
 export { Header } from './Header.jsx';
+export { PersonLink } from './PersonLink.jsx';
 export { Footer } from './Footer.jsx';
