@@ -1,6 +1,7 @@
 # Centro Cultural Manuel Suarez
 En este repositorio se encuentra el desarrollo web del Centro Cultural Manuel Suarez. <br> 
-Desarrollo vanilla, sin dependencias ni librerias.
+Diseño simple y moderno. Hecho con React, solo con dependencias de configuración de ambiente, <br> 
+sin librerías para animaciones, estilos ni scripts.
 
 ## Tecnologías
 <div>
