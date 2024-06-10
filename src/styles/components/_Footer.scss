@@ -6,7 +6,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: 1.8rem;
 
     .FooterTopWrapper {
       display: flex;
@@ -17,7 +17,9 @@
   }
 
   .FooterLine {
-    border-color: $blue;
+    border: $blue;
+    height: 0.12rem;
+    background: $blue;
     margin-inline: 1.5rem;
     border-radius: 1rem;
   }

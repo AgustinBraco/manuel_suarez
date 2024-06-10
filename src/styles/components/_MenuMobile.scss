@@ -14,18 +14,18 @@
   .MobileButton.open {
     background-image: url('/close.png');
     animation: bubbleOn 5s ease-in-out infinite;
-    transition: 0.35s linear 0s;
+    transition: 0.25s linear 0s;
   }
 
   .MobileButton.close {
     background-image: url('/menu.png');
     animation: bubbleOff 1s linear;
-    transition: 0.35s linear 0s;
+    transition: 0.25s linear 0s;
   }
 
   .MobileNav {
     position: fixed;
-    bottom: 0;
+    top: 10vh;
     right: 0;
     display: none;
     flex-flow: column nowrap;

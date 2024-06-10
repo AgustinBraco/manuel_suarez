@@ -91,6 +91,8 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 5rem;
+  height: 5rem;
 }
 #Logo .LogoImage {
   width: 5rem;
@@ -104,7 +106,7 @@ html {
   text-decoration: none;
   color: #4382C3;
   font-weight: 800;
-  font-size: 1.45rem;
+  font-size: 1.5rem;
 }
 
 .MenuLinksWrapper {
@@ -153,16 +155,16 @@ html {
 #MenuMobile .MobileButton.open {
   background-image: url("/close.png");
   animation: bubbleOn 5s ease-in-out infinite;
-  transition: 0.35s linear 0s;
+  transition: 0.25s linear 0s;
 }
 #MenuMobile .MobileButton.close {
   background-image: url("/menu.png");
   animation: bubbleOff 1s linear;
-  transition: 0.35s linear 0s;
+  transition: 0.25s linear 0s;
 }
 #MenuMobile .MobileNav {
   position: fixed;
-  bottom: 0;
+  top: 10vh;
   right: 0;
   display: none;
   flex-flow: column nowrap;
@@ -219,7 +221,7 @@ html {
   color: #4382C3;
 }
 .PersonLink .PersonLinkText {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
 }
 
 #Footer {
@@ -230,7 +232,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 1.8rem;
 }
 #Footer .FooterTop .FooterTopWrapper {
   display: flex;
@@ -239,7 +241,9 @@ html {
   gap: 1rem;
 }
 #Footer .FooterLine {
-  border-color: #4382C3;
+  border: #4382C3;
+  height: 0.12rem;
+  background: #4382C3;
   margin-inline: 1.5rem;
   border-radius: 1rem;
 }
