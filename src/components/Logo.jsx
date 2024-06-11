@@ -1,5 +1,7 @@
+import { Link } from 'react-router-dom';
+
 export const Logo = () => (
-  <a href="/" id="Logo">
+  <Link to="/" id="Logo">
     <img src="/logo.png" alt="Logo" className="LogoImage" />
     <div className="LogoWrapper">
       <p className="LogoText">Centro Cultural</p>
@@ -7,5 +9,5 @@ export const Logo = () => (
         <b>Manuel Suarez</b>
       </p>
     </div>
-  </a>
+  </Link>
 );

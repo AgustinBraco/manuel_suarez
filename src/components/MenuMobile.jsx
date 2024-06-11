@@ -21,12 +21,16 @@ export const MenuMobile = () => {
 
         <div className="MobileNavSocials">
           <SocialLink
-            link="https://ccmanuelsuarez.com.ar/radio/"
+            ToggleMenu={ToggleMenu}
+            link="/radio"
             text="Escuchanos →"
+            target="_self"
           />
           <SocialLink
+            ToggleMenu={ToggleMenu}
             link="https://www.instagram.com/ccmanuelsuarez/"
             text="Seguinos →"
+            target="_blank"
           />
         </div>
       </div>

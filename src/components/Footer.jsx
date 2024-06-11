@@ -7,12 +7,14 @@ export const Footer = () => (
 
       <div className="FooterTopWrapper">
         <SocialLink
-          link="https://ccmanuelsuarez.com.ar/radio"
+          link="/radio"
           text="Escuchanos →"
+          target="_self"
         />
         <SocialLink
           link="https://www.instagram.com/ccmanuelsuarez/"
           text="Seguinos →"
+          target="_blank"
         />
       </div>
     </div>
