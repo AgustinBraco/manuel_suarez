@@ -2,19 +2,10 @@
   display: flex;
   height: 10vh;
   justify-content: space-between;
+  background-color: $white;
   padding: 1.5rem;
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
-}
-
-.White {
-  background-color: $white;
-  transition: 0.6s;
-}
-
-.Transparent {
-  background-color: transparent;
-  transition: 0.6s;
 }
