@@ -1,3 +1,4 @@
+// Bubble
 @keyframes bubbleOn {
   0% {
     border-radius: 50%;
@@ -28,6 +29,7 @@
   }
 }
 
+// Slide
 @keyframes slideIn {
   from {
     transform: translateX(100%);
@@ -46,6 +48,7 @@
   }
 }
 
+// Pulse
 @keyframes pulse {
   0% {
     transform: scale(1);

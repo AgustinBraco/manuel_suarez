@@ -1,4 +1,4 @@
-import { MenuLinks } from ".";
+import { MenuLinks } from '.';
 
 export const MenuDesktop = () => (
   <div className="MenuDesktop">
