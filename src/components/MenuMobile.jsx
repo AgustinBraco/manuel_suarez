@@ -3,15 +3,21 @@ import { MenuButton, MenuLinks, SocialLink } from '.';
 
 export const MenuMobile = () => {
   const [navStatus, setNavStatus] = useState('');
+  const [currentRadius, setCurrentRadius] = useState('');
 
-  const ToggleMenu = () =>
+  const ToggleMenu = () => {
     navStatus === 'close' || navStatus === ''
       ? setNavStatus('open')
       : setNavStatus('close');
 
+      const menuElement = document.querySelector('.MenuButton');
+      const borderRadius = window.getComputedStyle(menuElement).borderRadius;
+      setCurrentRadius(borderRadius);
+  };
+
   return (
     <div id="MenuMobile" className={navStatus}>
-      <MenuButton ToggleMenu={ToggleMenu} navStatus={navStatus}/>
+      <MenuButton currentRadius={currentRadius} ToggleMenu={ToggleMenu} navStatus={navStatus} />
 
       <div className={`MobileNav ${navStatus}`}>
         <MenuLinks ToggleMenu={ToggleMenu} />

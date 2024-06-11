@@ -22,7 +22,7 @@
 
 @keyframes bubbleOff {
   from {
-    border-radius: 31% 69% 33% 67%/57% 52% 48% 43%;
+    border-radius: var(--current-radius);
   }
   to {
     border-radius: 50%;

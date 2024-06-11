@@ -13,7 +13,7 @@
     background: $white;
     height: 0.2rem;
     border-radius: 0.5rem;
-    transition: all .3s linear;
+    transition: all .2s linear;
     transform-origin: center;
     position: absolute;
     left: 50%;
@@ -58,6 +58,6 @@
 }
 
 .MenuButton.close {
-  animation: bubbleOff 2s linear;
+  animation: bubbleOff 0.8s linear;
   transition: 0.2s linear 0s;
 }

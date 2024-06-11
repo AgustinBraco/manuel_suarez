@@ -41,7 +41,7 @@ html {
 }
 @keyframes bubbleOff {
   from {
-    border-radius: 31% 69% 33% 67%/57% 52% 48% 43%;
+    border-radius: var(--current-radius);
   }
   to {
     border-radius: 50%;
@@ -145,7 +145,7 @@ html {
   background: #ffffff;
   height: 0.2rem;
   border-radius: 0.5rem;
-  transition: all 0.3s linear;
+  transition: all 0.2s linear;
   transform-origin: center;
   position: absolute;
   left: 50%;
@@ -183,7 +183,7 @@ html {
 }
 
 .MenuButton.close {
-  animation: bubbleOff 2s linear;
+  animation: bubbleOff 0.8s linear;
   transition: 0.2s linear 0s;
 }
 
