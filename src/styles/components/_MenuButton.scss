@@ -1,0 +1,63 @@
+.MenuButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  background-color: $blue;
+  border-radius: 50%;
+  position: relative;
+
+  .MenuLine {
+    background: $white;
+    height: 0.2rem;
+    border-radius: 0.5rem;
+    transition: all .3s linear;
+    transform-origin: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .FirstLine {
+    width: 40%;
+    top: calc(50% - 0.8rem);
+  }
+
+  .FirstLine.open {
+    transform: translateX(-50%) rotate(-45deg);
+    top: 50%;
+  }
+
+  .SecondLine {
+    width: 50%;
+    top: 50%;
+    opacity: 1;
+  }
+
+  .SecondLine.open {
+    opacity: 0;
+  }
+
+  .ThirdLine {
+    width: 30%;
+    top: calc(50% + 0.8rem);
+  }
+
+  .ThirdLine.open {
+    transform: translateX(-50%) rotate(45deg);
+    top: 50%;
+    width: 40%;
+  }
+}
+
+.MenuButton.open {
+  animation: bubbleOn 8s ease-in-out infinite;
+  transition: 0.2s linear 0s;
+}
+
+.MenuButton.close {
+  animation: bubbleOff 2s linear;
+  transition: 0.2s linear 0s;
+}

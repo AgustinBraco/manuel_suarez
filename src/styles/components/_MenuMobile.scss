@@ -1,28 +1,4 @@
 #MenuMobile {
-  .MobileButton {
-    background-image: url('/menu.png');
-    background-size: 2.5rem;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 50%;
-    background-color: $blue;
-    width: 5rem;
-    height: 5rem;
-    transition: background-image 0.35s ease;
-  }
-
-  .MobileButton.open {
-    background-image: url('/close.png');
-    animation: bubbleOn 5s ease-in-out infinite;
-    transition: 0.2s linear 0s;
-  }
-
-  .MobileButton.close {
-    background-image: url('/menu.png');
-    animation: bubbleOff 1s linear;
-    transition: 0.2s linear 0s;
-  }
-
   .MobileNav {
     position: fixed;
     top: 10vh;

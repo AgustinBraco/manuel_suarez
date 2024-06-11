@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap");
 /* Colors */
 * {
@@ -116,8 +117,74 @@ html {
 .SocialLink {
   text-decoration: none;
   color: #4382C3;
-  font-weight: 800;
-  font-size: 1.5rem;
+  font-weight: bolder;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 0.2rem;
+}
+.SocialLink::after {
+  content: " →";
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.MenuButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  background-color: #4382C3;
+  border-radius: 50%;
+  position: relative;
+}
+.MenuButton .MenuLine {
+  background: #ffffff;
+  height: 0.2rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s linear;
+  transform-origin: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.MenuButton .FirstLine {
+  width: 40%;
+  top: calc(50% - 0.8rem);
+}
+.MenuButton .FirstLine.open {
+  transform: translateX(-50%) rotate(-45deg);
+  top: 50%;
+}
+.MenuButton .SecondLine {
+  width: 50%;
+  top: 50%;
+  opacity: 1;
+}
+.MenuButton .SecondLine.open {
+  opacity: 0;
+}
+.MenuButton .ThirdLine {
+  width: 30%;
+  top: calc(50% + 0.8rem);
+}
+.MenuButton .ThirdLine.open {
+  transform: translateX(-50%) rotate(45deg);
+  top: 50%;
+  width: 40%;
+}
+
+.MenuButton.open {
+  animation: bubbleOn 8s ease-in-out infinite;
+  transition: 0.2s linear 0s;
+}
+
+.MenuButton.close {
+  animation: bubbleOff 2s linear;
+  transition: 0.2s linear 0s;
 }
 
 .MenuLinksWrapper {
@@ -153,27 +220,6 @@ html {
   color: #4382C3;
 }
 
-#MenuMobile .MobileButton {
-  background-image: url("/menu.png");
-  background-size: 2.5rem;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-radius: 50%;
-  background-color: #4382C3;
-  width: 5rem;
-  height: 5rem;
-  transition: background-image 0.35s ease;
-}
-#MenuMobile .MobileButton.open {
-  background-image: url("/close.png");
-  animation: bubbleOn 5s ease-in-out infinite;
-  transition: 0.2s linear 0s;
-}
-#MenuMobile .MobileButton.close {
-  background-image: url("/menu.png");
-  animation: bubbleOff 1s linear;
-  transition: 0.2s linear 0s;
-}
 #MenuMobile .MobileNav {
   position: fixed;
   top: 10vh;

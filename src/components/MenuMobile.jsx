@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { MenuLinks, SocialLink } from '.';
+import { MenuButton, MenuLinks, SocialLink } from '.';
 
 export const MenuMobile = () => {
   const [navStatus, setNavStatus] = useState('');
@@ -11,10 +11,7 @@ export const MenuMobile = () => {
 
   return (
     <div id="MenuMobile" className={navStatus}>
-      <div
-        onClick={() => ToggleMenu()}
-        className={`MobileButton ${navStatus}`}
-      ></div>
+      <MenuButton ToggleMenu={ToggleMenu} navStatus={navStatus}/>
 
       <div className={`MobileNav ${navStatus}`}>
         <MenuLinks ToggleMenu={ToggleMenu} />
@@ -23,13 +20,13 @@ export const MenuMobile = () => {
           <SocialLink
             ToggleMenu={ToggleMenu}
             link="/radio"
-            text="Escuchanos →"
+            text="Escuchanos"
             target="_self"
           />
           <SocialLink
             ToggleMenu={ToggleMenu}
             link="https://www.instagram.com/ccmanuelsuarez/"
-            text="Seguinos →"
+            text="Seguinos"
             target="_blank"
           />
         </div>

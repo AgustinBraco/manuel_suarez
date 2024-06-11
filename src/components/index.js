@@ -1,5 +1,6 @@
 export { Logo } from './Logo.jsx';
 export { SocialLink } from './SocialLink.jsx';
+export { MenuButton } from './MenuButton.jsx';
 export { MenuLinks } from './MenuLinks.jsx';
 export { MenuMobile } from './MenuMobile.jsx';
 export { MenuDesktop } from './MenuDesktop.jsx';

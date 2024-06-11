@@ -1,6 +1,16 @@
 .SocialLink {
   text-decoration: none;
   color: $blue;
-  font-weight: 800;
-  font-size: 1.5rem;
+  font-weight: bolder;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 0.2rem;
+
+  &::after {
+    content: ' →';
+    font-weight: bold;
+    font-size: 2rem;
+  }
 }
