@@ -10,7 +10,7 @@
     transition: transform 0.3s linear;
     text-align: end;
     height: 91dvh;
-    width: 70vw;
+    width: 75vw;
     background-color: $white;
     z-index: 999999;
 
@@ -46,3 +46,18 @@
     animation: slideIn 0.45s forwards;
   }
 }
+
+#MenuMobile.close {
+  &::after {
+    content: '';
+    position: fixed;
+    top: 10vh;
+    right: 0;
+    z-index: 999;
+    width: 100vw;
+    height: 90dvh;
+    background-color: #7bb9fc3c;
+    animation: slideOut 0.5s forwards;
+  }
+}
+

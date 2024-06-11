@@ -230,7 +230,7 @@ html {
   transition: transform 0.3s linear;
   text-align: end;
   height: 91dvh;
-  width: 70vw;
+  width: 75vw;
   background-color: #ffffff;
   z-index: 999999;
 }
@@ -259,6 +259,18 @@ html {
   height: 90dvh;
   background-color: rgba(123, 185, 252, 0.2352941176);
   animation: slideIn 0.45s forwards;
+}
+
+#MenuMobile.close::after {
+  content: "";
+  position: fixed;
+  top: 10vh;
+  right: 0;
+  z-index: 999;
+  width: 100vw;
+  height: 90dvh;
+  background-color: rgba(123, 185, 252, 0.2352941176);
+  animation: slideOut 0.5s forwards;
 }
 
 #Header {
