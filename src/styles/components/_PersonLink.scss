@@ -5,5 +5,9 @@
 
   .PersonLinkText {
     font-size: 1.3rem;
+
+    @include responsive(md) {
+      font-size: 1.5rem;
+    }
   }
 }

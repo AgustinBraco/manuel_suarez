@@ -2,16 +2,33 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 5rem;
-  height: 5rem;
   cursor: $pointer, pointer;
-
+  text-decoration: none;
+  
   .LogoImage {
     width: 5rem;
     height: 5rem;
+
+    @include responsive(md) {
+      width: 6rem;
+      height: 6rem;
+    }
   }
 
   .LogoWrapper {
     display: none;
+
+    @include responsive(md) {
+      display: flex;
+      flex-flow: column;
+      padding: 1rem;
+      gap: 0.2rem;
+
+      .LogoText {
+        white-space: nowrap;
+        font-size: 1.8rem;
+        color: $black;
+      }
+    }
   }
 }

@@ -23,7 +23,7 @@ export const Footer = () => (
 
     <div className="FooterBottom">
       <PersonLink
-        link="https://www.linkedin.com/in/lucas-oliva-38858320b/"
+        link="https://www.linkedin.com/in/agust%C3%ADn-braco/"
         title="Desarrollo:"
         text="Agustín Braco"
       />

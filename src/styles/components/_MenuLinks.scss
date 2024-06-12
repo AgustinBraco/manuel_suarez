@@ -6,6 +6,9 @@
 
   @include responsive(md) {
     flex-flow: row nowrap;
+    display: flex;
+    align-items: center;
+    gap: 5rem;
   }
 
   .MenuLink {
@@ -20,23 +23,72 @@
     align-items: center;
     gap: 1rem;
     cursor: $pointer, pointer;
-  }
-
-  .MenuCircle {
-    content: '';
-    width: 1.8rem;
-    height: 1.8rem;
-    border-radius: 100%;
-    background-color: $blue;
-    opacity: 0.5;
-    animation: pulse 12s infinite;
 
     @include responsive(md) {
-      display: none;
+      font-size: 1.6rem;
+      padding-right: 0rem;
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -0.3rem;
+        left: 0;
+        width: 0;
+        height: 0.2rem;
+        background-color: $blue;
+        transition: width .35s ease-in-out;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+    }
+
+    .MenuCircle {
+      content: '';
+      width: 1.8rem;
+      height: 1.8rem;
+      border-radius: 100%;
+      background-color: $blue;
+      opacity: 0.5;
+      animation: pulse 12s infinite;
+
+      @include responsive(md) {
+        display: none;
+      }
     }
   }
 
   .MenuLinkContact {
     color: $blue;
+    font-size: 2.2rem;
+
+    @include responsive(md) {
+      position: relative;
+      color: $white;
+      background-color: $blue;
+      border-radius: 2rem;
+      height: 3.5rem;
+      width: 10rem;
+      font-size: 1.7rem;
+      font-weight: 600;
+      transition: all .5s ease;
+
+      &::after {
+        display: none;
+      }
+
+      &:hover {
+        background-color: $grey;
+      }
+
+      p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
   }
 }

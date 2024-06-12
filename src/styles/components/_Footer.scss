@@ -8,11 +8,20 @@
     align-items: center;
     padding: 1.5rem;
 
+    @include responsive(md) {
+      padding-inline: 12rem;
+      padding-block: 2.5rem;
+    }
+
     .FooterTopWrapper {
       display: flex;
       flex-flow: column nowrap;
       text-align: end;
       gap: 1rem;
+
+      @include responsive(md) {
+        gap: 1.5rem;
+      }
     }
   }
 
@@ -22,11 +31,22 @@
     background: $lightblue;
     margin-inline: 3.5rem;
     border-radius: 1rem;
+
+    @include responsive(md) {
+      height: 0.2rem;
+      margin-inline: 15rem;
+      margin-block: 1.5rem;
+    }
   }
 
   .FooterBottom {
     display: flex;
     justify-content: space-between;
     padding: 1.5rem;
+
+    @include responsive(md) {
+      margin-inline: 14rem;
+      margin-block: 0.5rem;
+    }
   }
 }

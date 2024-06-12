@@ -103,16 +103,34 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 5rem;
-  height: 5rem;
   cursor: url("/pointer.png"), pointer;
+  text-decoration: none;
 }
 #Logo .LogoImage {
   width: 5rem;
   height: 5rem;
 }
+@media screen and (min-width: 715px) {
+  #Logo .LogoImage {
+    width: 6rem;
+    height: 6rem;
+  }
+}
 #Logo .LogoWrapper {
   display: none;
+}
+@media screen and (min-width: 715px) {
+  #Logo .LogoWrapper {
+    display: flex;
+    flex-flow: column;
+    padding: 1rem;
+    gap: 0.2rem;
+  }
+  #Logo .LogoWrapper .LogoText {
+    white-space: nowrap;
+    font-size: 1.8rem;
+    color: #000000;
+  }
 }
 
 .SocialLink {
@@ -127,10 +145,21 @@ html {
   padding-right: 0.5rem;
   cursor: url("/pointer.png"), pointer;
 }
+@media screen and (min-width: 715px) {
+  .SocialLink {
+    font-size: 1.8rem;
+    gap: 0.6rem;
+  }
+}
 .SocialLink::after {
   content: " →";
   font-weight: bold;
   font-size: 2rem;
+}
+@media screen and (min-width: 715px) {
+  .SocialLink::after {
+    font-size: 2rem;
+  }
 }
 
 .MenuButton {
@@ -199,6 +228,9 @@ html {
 @media screen and (min-width: 715px) {
   .MenuLinksWrapper {
     flex-flow: row nowrap;
+    display: flex;
+    align-items: center;
+    gap: 5rem;
   }
 }
 .MenuLinksWrapper .MenuLink {
@@ -214,7 +246,27 @@ html {
   gap: 1rem;
   cursor: url("/pointer.png"), pointer;
 }
-.MenuLinksWrapper .MenuCircle {
+@media screen and (min-width: 715px) {
+  .MenuLinksWrapper .MenuLink {
+    font-size: 1.6rem;
+    padding-right: 0rem;
+    position: relative;
+  }
+  .MenuLinksWrapper .MenuLink::after {
+    content: "";
+    position: absolute;
+    bottom: -0.3rem;
+    left: 0;
+    width: 0;
+    height: 0.2rem;
+    background-color: #4382C3;
+    transition: width 0.35s ease-in-out;
+  }
+  .MenuLinksWrapper .MenuLink:hover::after {
+    width: 100%;
+  }
+}
+.MenuLinksWrapper .MenuLink .MenuCircle {
   content: "";
   width: 1.8rem;
   height: 1.8rem;
@@ -224,12 +276,38 @@ html {
   animation: pulse 12s infinite;
 }
 @media screen and (min-width: 715px) {
-  .MenuLinksWrapper .MenuCircle {
+  .MenuLinksWrapper .MenuLink .MenuCircle {
     display: none;
   }
 }
 .MenuLinksWrapper .MenuLinkContact {
   color: #4382C3;
+  font-size: 2.2rem;
+}
+@media screen and (min-width: 715px) {
+  .MenuLinksWrapper .MenuLinkContact {
+    position: relative;
+    color: #ffffff;
+    background-color: #4382C3;
+    border-radius: 2rem;
+    height: 3.5rem;
+    width: 10rem;
+    font-size: 1.7rem;
+    font-weight: 600;
+    transition: all 0.5s ease;
+  }
+  .MenuLinksWrapper .MenuLinkContact::after {
+    display: none;
+  }
+  .MenuLinksWrapper .MenuLinkContact:hover {
+    background-color: #2D3338;
+  }
+  .MenuLinksWrapper .MenuLinkContact p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 #MenuMobile .MobileNav {
@@ -290,12 +368,18 @@ html {
   display: flex;
   height: 10vh;
   justify-content: space-between;
+  align-items: center;
   background-color: #ffffff;
   padding: 1.5rem;
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
+}
+@media screen and (min-width: 715px) {
+  #Header {
+    padding: 5rem;
+  }
 }
 
 .PersonLink {
@@ -305,6 +389,11 @@ html {
 }
 .PersonLink .PersonLinkText {
   font-size: 1.3rem;
+}
+@media screen and (min-width: 715px) {
+  .PersonLink .PersonLinkText {
+    font-size: 1.5rem;
+  }
 }
 
 #Footer {
@@ -317,11 +406,22 @@ html {
   align-items: center;
   padding: 1.5rem;
 }
+@media screen and (min-width: 715px) {
+  #Footer .FooterTop {
+    padding-inline: 12rem;
+    padding-block: 2.5rem;
+  }
+}
 #Footer .FooterTop .FooterTopWrapper {
   display: flex;
   flex-flow: column nowrap;
   text-align: end;
   gap: 1rem;
+}
+@media screen and (min-width: 715px) {
+  #Footer .FooterTop .FooterTopWrapper {
+    gap: 1.5rem;
+  }
 }
 #Footer .FooterLine {
   border: #4382C3;
@@ -330,10 +430,23 @@ html {
   margin-inline: 3.5rem;
   border-radius: 1rem;
 }
+@media screen and (min-width: 715px) {
+  #Footer .FooterLine {
+    height: 0.2rem;
+    margin-inline: 15rem;
+    margin-block: 1.5rem;
+  }
+}
 #Footer .FooterBottom {
   display: flex;
   justify-content: space-between;
   padding: 1.5rem;
+}
+@media screen and (min-width: 715px) {
+  #Footer .FooterBottom {
+    margin-inline: 14rem;
+    margin-block: 0.5rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
