@@ -3,7 +3,10 @@
   flex-flow: column nowrap;
   height: 70%;
   justify-content: space-evenly;
-  // gap: 1rem;
+
+  @include responsive(md) {
+    flex-flow: row nowrap;
+  }
 
   .MenuLink {
     text-decoration: none;
@@ -16,6 +19,7 @@
     justify-content: end;
     align-items: center;
     gap: 1rem;
+    cursor: $pointer, pointer;
   }
 
   .MenuCircle {
@@ -25,8 +29,11 @@
     border-radius: 100%;
     background-color: $blue;
     opacity: 0.5;
-
     animation: pulse 12s infinite;
+
+    @include responsive(md) {
+      display: none;
+    }
   }
 
   .MenuLinkContact {

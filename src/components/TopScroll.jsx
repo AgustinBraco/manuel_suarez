@@ -22,9 +22,7 @@ export const TopScroll = () => {
 
     window.addEventListener('load', calculateTotalHeight);
 
-    return () => {
-      window.removeEventListener('load', calculateTotalHeight);
-    };
+    return () => window.removeEventListener('load', calculateTotalHeight);
   }, []);
 
   useEffect(() => {
@@ -42,9 +40,7 @@ export const TopScroll = () => {
 
     window.addEventListener('scroll', handleScroll);
 
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return <div id="TopScroll"></div>;

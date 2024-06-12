@@ -10,30 +10,34 @@ export const MenuMobile = () => {
       ? setNavStatus('open')
       : setNavStatus('close');
 
-      const menuElement = document.querySelector('.MenuButton');
-      const borderRadius = window.getComputedStyle(menuElement).borderRadius;
-      setCurrentRadius(borderRadius);
+    const menuElement = document.querySelector('.MenuButton');
+    const borderRadius = window.getComputedStyle(menuElement).borderRadius;
+    setCurrentRadius(borderRadius);
   };
 
   return (
     <div id="MenuMobile" className={navStatus}>
-      <MenuButton currentRadius={currentRadius} ToggleMenu={ToggleMenu} navStatus={navStatus} />
+      <MenuButton
+        currentRadius={currentRadius}
+        navStatus={navStatus}
+        ToggleMenu={ToggleMenu}
+      />
 
       <div className={`MobileNav ${navStatus}`}>
         <MenuLinks ToggleMenu={ToggleMenu} />
 
         <div className="MobileNavSocials">
           <SocialLink
-            ToggleMenu={ToggleMenu}
             link="/radio"
             text="Escuchanos"
             target="_self"
+            ToggleMenu={ToggleMenu}
           />
           <SocialLink
-            ToggleMenu={ToggleMenu}
             link="https://www.instagram.com/ccmanuelsuarez/"
             text="Seguinos"
             target="_blank"
+            ToggleMenu={ToggleMenu}
           />
         </div>
       </div>

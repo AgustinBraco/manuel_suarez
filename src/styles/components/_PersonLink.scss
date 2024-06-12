@@ -1,6 +1,7 @@
 .PersonLink {
   text-decoration: none;
   color: $blue;
+  cursor: $pointer, pointer;
 
   .PersonLinkText {
     font-size: 1.3rem;

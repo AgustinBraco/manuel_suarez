@@ -24,22 +24,15 @@ export const MenuLinks = ({ ToggleMenu }) => (
       className="MenuLink"
       target="_blank"
       to="https://docs.google.com/forms/d/e/1FAIpQLScURjAhUIDmnA_yyRAm9KfMsEKggLzxze9yJdpW0Crt26taJQ/viewform"
-      onClick={() => ToggleMenu()}
     >
       <p>Publicidad</p>
       <div className="MenuCircle"></div>
     </Link>
-    <Link
-      onClick={() => ToggleMenu()}
-      className="MenuLink"
-      target="_blank"
-      to="https://wa.link/73mjyt"
-    >
+    <Link className="MenuLink" target="_blank" to="https://wa.link/73mjyt">
       <p>Hacé radio</p>
       <div className="MenuCircle"></div>
     </Link>
     <Link
-      onClick={() => ToggleMenu()}
       className="MenuLink"
       target="_blank"
       to="https://play.google.com/store/apps/details?id=com.app.Radio_La_Mosca"
@@ -48,10 +41,10 @@ export const MenuLinks = ({ ToggleMenu }) => (
       <div className="MenuCircle"></div>
     </Link>
     <Link
-      onClick={() => ToggleMenu()}
       className="MenuLink MenuLinkContact"
       target="_self"
       to="/contacto"
+      onClick={() => ToggleMenu()}
     >
       <p>Contacto</p>
       <div className="MenuCircle"></div>

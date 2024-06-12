@@ -105,6 +105,7 @@ html {
   align-items: center;
   width: 5rem;
   height: 5rem;
+  cursor: url("/pointer.png"), pointer;
 }
 #Logo .LogoImage {
   width: 5rem;
@@ -124,6 +125,7 @@ html {
   align-items: center;
   gap: 0.2rem;
   padding-right: 0.5rem;
+  cursor: url("/pointer.png"), pointer;
 }
 .SocialLink::after {
   content: " →";
@@ -194,6 +196,11 @@ html {
   height: 70%;
   justify-content: space-evenly;
 }
+@media screen and (min-width: 715px) {
+  .MenuLinksWrapper {
+    flex-flow: row nowrap;
+  }
+}
 .MenuLinksWrapper .MenuLink {
   text-decoration: none;
   color: #2D3338;
@@ -205,6 +212,7 @@ html {
   justify-content: end;
   align-items: center;
   gap: 1rem;
+  cursor: url("/pointer.png"), pointer;
 }
 .MenuLinksWrapper .MenuCircle {
   content: "";
@@ -214,6 +222,11 @@ html {
   background-color: #4382C3;
   opacity: 0.5;
   animation: pulse 12s infinite;
+}
+@media screen and (min-width: 715px) {
+  .MenuLinksWrapper .MenuCircle {
+    display: none;
+  }
 }
 .MenuLinksWrapper .MenuLinkContact {
   color: #4382C3;
@@ -288,6 +301,7 @@ html {
 .PersonLink {
   text-decoration: none;
   color: #4382C3;
+  cursor: url("/pointer.png"), pointer;
 }
 .PersonLink .PersonLinkText {
   font-size: 1.3rem;

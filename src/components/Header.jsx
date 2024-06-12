@@ -1,12 +1,21 @@
 import { useState, useEffect } from 'react';
-import { Logo, MenuMobile, MenuDesktop } from '.';
+import { Logo, MenuMobile, MenuLinks } from '.';
 
-const viewport = 412;
-const isMenuMobile = viewport < 915;
+export const Header = () => {
+  const isMenuMobile = window.innerWidth < 915;
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
-export const Header = () => (
-  <header id="Header">
-    <Logo />
-    {isMenuMobile ? <MenuMobile /> : <MenuDesktop />}
-  </header>
-);
+  useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth);
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  return (
+    <header id="Header">
+      <Logo />
+      {isMenuMobile ? <MenuMobile /> : <MenuLinks />}
+    </header>
+  );
+};

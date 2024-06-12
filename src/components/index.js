@@ -3,7 +3,6 @@ export { SocialLink } from './SocialLink.jsx';
 export { MenuButton } from './MenuButton.jsx';
 export { MenuLinks } from './MenuLinks.jsx';
 export { MenuMobile } from './MenuMobile.jsx';
-export { MenuDesktop } from './MenuDesktop.jsx';
 export { TopScroll } from './TopScroll.jsx';
 export { Header } from './Header.jsx';
 export { PersonLink } from './PersonLink.jsx';
