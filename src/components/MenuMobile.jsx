@@ -10,7 +10,7 @@ export const MenuMobile = () => {
       ? setNavStatus('open')
       : setNavStatus('close');
 
-    const menuElement = document.querySelector('.MenuButton');
+    const menuElement = document.getElementById('MenuButton');
     const borderRadius = window.getComputedStyle(menuElement).borderRadius;
     setCurrentRadius(borderRadius);
   };

@@ -1,4 +1,26 @@
 #Radio {
-  height: 300rem;
-  background-color: $lightgrey;
+  width: 100vw;
+  margin-top: 13vh;
+  overflow: hidden;
+
+  .Player {
+    height: 65vh;
+    margin-inline: -1rem;
+    
+    .PlayerIframe {
+      border: none;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .Programs {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 8rem;
+    margin-block: 10rem;
+  }
 }

@@ -4,6 +4,7 @@
 /* Colors */
 $blue: #4382C3;
 $lightblue: #7bb9fc;
+$darkblue: #34689d;
 $grey: #2D3338;
 $lightgrey: #bbbbbb; 
 $black: #000000;
@@ -21,7 +22,7 @@ $pointer: url('/pointer.png');
 
   &::selection {
     background: $lightblue;
-    color: $grey;
+    color: $black;
   }
 }
 

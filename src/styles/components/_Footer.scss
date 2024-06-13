@@ -2,6 +2,10 @@
   width: 100vw;
   background-color: $white;
 
+  @include responsive(md) {
+    padding-inline: 25rem;
+  }
+
   .FooterTop {
     display: flex;
     justify-content: space-between;
@@ -28,7 +32,7 @@
   .FooterLine {
     border: $blue;
     height: 0.1rem;
-    background: $lightblue;
+    background: $lightgrey;
     margin-inline: 3.5rem;
     border-radius: 1rem;
 

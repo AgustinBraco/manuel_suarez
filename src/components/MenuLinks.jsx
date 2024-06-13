@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom/dist';
 
 export const MenuLinks = ({ ToggleMenu }) => (
-  <nav className="MenuLinksWrapper">
+  <nav id='MenuLinks'>
     <Link
       className="MenuLink"
       target="_self"

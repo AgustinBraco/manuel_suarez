@@ -1,9 +1,9 @@
+// Base
 @import 'base/responsive';
 @import 'base/global';
 @import 'base/keyframes';
-@import 'screens/Landing';
-@import 'screens/Contact';
-@import 'screens/Radio';
+
+// Components
 @import 'components/TopScroll';
 @import 'components/Logo';
 @import 'components/SocialLink';
@@ -13,3 +13,10 @@
 @import 'components/Header';
 @import 'components/PersonLink';
 @import 'components/Footer';
+@import 'components/Program';
+@import 'components/Form';
+
+// Screens
+@import 'screens/Landing';
+@import 'screens/Radio';
+@import 'screens/Contact';

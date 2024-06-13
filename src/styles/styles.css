@@ -8,7 +8,7 @@
 }
 *::selection {
   background: #7bb9fc;
-  color: #2D3338;
+  color: #000000;
 }
 
 html {
@@ -74,21 +74,6 @@ html {
     transform: scale(1);
   }
 }
-#Landing {
-  height: 300rem;
-  background-color: #bbbbbb;
-}
-
-#Contact {
-  height: 300rem;
-  background-color: #bbbbbb;
-}
-
-#Radio {
-  height: 300rem;
-  background-color: #bbbbbb;
-}
-
 #TopScroll {
   width: 0%;
   height: 0.4rem;
@@ -133,7 +118,7 @@ html {
   }
 }
 
-.SocialLink {
+#SocialLink {
   text-decoration: none;
   color: #4382C3;
   font-weight: bolder;
@@ -146,23 +131,32 @@ html {
   cursor: url("/pointer.png"), pointer;
 }
 @media screen and (min-width: 715px) {
-  .SocialLink {
+  #SocialLink {
+    position: relative;
+    overflow: hidden;
     font-size: 1.8rem;
     gap: 0.6rem;
   }
 }
-.SocialLink::after {
+#SocialLink::after {
   content: " →";
   font-weight: bold;
   font-size: 2rem;
 }
 @media screen and (min-width: 715px) {
-  .SocialLink::after {
+  #SocialLink::after {
     font-size: 2rem;
+    transform: rotate(-20deg);
+  }
+}
+@media screen and (min-width: 715px) {
+  #SocialLink:hover::after {
+    transform: rotate(0deg);
+    transition: linear all 0.1s;
   }
 }
 
-.MenuButton {
+#MenuButton {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -173,7 +167,7 @@ html {
   border-radius: 50%;
   position: relative;
 }
-.MenuButton .MenuLine {
+#MenuButton .MenuLine {
   background: #ffffff;
   height: 0.2rem;
   border-radius: 0.5rem;
@@ -183,27 +177,27 @@ html {
   left: 50%;
   transform: translateX(-50%);
 }
-.MenuButton .FirstLine {
+#MenuButton .FirstLine {
   width: 40%;
   top: calc(50% - 0.8rem);
 }
-.MenuButton .FirstLine.open {
+#MenuButton .FirstLine.open {
   transform: translateX(-50%) rotate(-45deg);
   top: 50%;
 }
-.MenuButton .SecondLine {
+#MenuButton .SecondLine {
   width: 50%;
   top: 50%;
   opacity: 1;
 }
-.MenuButton .SecondLine.open {
+#MenuButton .SecondLine.open {
   opacity: 0;
 }
-.MenuButton .ThirdLine {
+#MenuButton .ThirdLine {
   width: 30%;
   top: calc(50% + 0.8rem);
 }
-.MenuButton .ThirdLine.open {
+#MenuButton .ThirdLine.open {
   transform: translateX(-50%) rotate(45deg);
   top: 50%;
   width: 40%;
@@ -219,21 +213,21 @@ html {
   transition: 0.2s linear 0s;
 }
 
-.MenuLinksWrapper {
+#MenuLinks {
   display: flex;
   flex-flow: column nowrap;
   height: 70%;
   justify-content: space-evenly;
 }
 @media screen and (min-width: 715px) {
-  .MenuLinksWrapper {
+  #MenuLinks {
     flex-flow: row nowrap;
     display: flex;
     align-items: center;
     gap: 5rem;
   }
 }
-.MenuLinksWrapper .MenuLink {
+#MenuLinks .MenuLink {
   text-decoration: none;
   color: #2D3338;
   font-size: 2.2rem;
@@ -247,12 +241,12 @@ html {
   cursor: url("/pointer.png"), pointer;
 }
 @media screen and (min-width: 715px) {
-  .MenuLinksWrapper .MenuLink {
+  #MenuLinks .MenuLink {
     font-size: 1.6rem;
     padding-right: 0rem;
     position: relative;
   }
-  .MenuLinksWrapper .MenuLink::after {
+  #MenuLinks .MenuLink::after {
     content: "";
     position: absolute;
     bottom: -0.3rem;
@@ -262,11 +256,11 @@ html {
     background-color: #4382C3;
     transition: width 0.35s ease-in-out;
   }
-  .MenuLinksWrapper .MenuLink:hover::after {
+  #MenuLinks .MenuLink:hover::after {
     width: 100%;
   }
 }
-.MenuLinksWrapper .MenuLink .MenuCircle {
+#MenuLinks .MenuLink .MenuCircle {
   content: "";
   width: 1.8rem;
   height: 1.8rem;
@@ -276,16 +270,16 @@ html {
   animation: pulse 12s infinite;
 }
 @media screen and (min-width: 715px) {
-  .MenuLinksWrapper .MenuLink .MenuCircle {
+  #MenuLinks .MenuLink .MenuCircle {
     display: none;
   }
 }
-.MenuLinksWrapper .MenuLinkContact {
+#MenuLinks .MenuLinkContact {
   color: #4382C3;
   font-size: 2.2rem;
 }
 @media screen and (min-width: 715px) {
-  .MenuLinksWrapper .MenuLinkContact {
+  #MenuLinks .MenuLinkContact {
     position: relative;
     color: #ffffff;
     background-color: #4382C3;
@@ -296,13 +290,13 @@ html {
     font-weight: 600;
     transition: all 0.5s ease;
   }
-  .MenuLinksWrapper .MenuLinkContact::after {
+  #MenuLinks .MenuLinkContact::after {
     display: none;
   }
-  .MenuLinksWrapper .MenuLinkContact:hover {
-    background-color: #2D3338;
+  #MenuLinks .MenuLinkContact:hover {
+    background-color: #34689d;
   }
-  .MenuLinksWrapper .MenuLinkContact p {
+  #MenuLinks .MenuLinkContact p {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -382,16 +376,16 @@ html {
   }
 }
 
-.PersonLink {
+#PersonLink {
   text-decoration: none;
   color: #4382C3;
   cursor: url("/pointer.png"), pointer;
 }
-.PersonLink .PersonLinkText {
+#PersonLink .PersonLinkText {
   font-size: 1.3rem;
 }
 @media screen and (min-width: 715px) {
-  .PersonLink .PersonLinkText {
+  #PersonLink .PersonLinkText {
     font-size: 1.5rem;
   }
 }
@@ -399,6 +393,11 @@ html {
 #Footer {
   width: 100vw;
   background-color: #ffffff;
+}
+@media screen and (min-width: 715px) {
+  #Footer {
+    padding-inline: 25rem;
+  }
 }
 #Footer .FooterTop {
   display: flex;
@@ -426,7 +425,7 @@ html {
 #Footer .FooterLine {
   border: #4382C3;
   height: 0.1rem;
-  background: #7bb9fc;
+  background: #bbbbbb;
   margin-inline: 3.5rem;
   border-radius: 1rem;
 }
@@ -447,6 +446,141 @@ html {
     margin-inline: 14rem;
     margin-block: 0.5rem;
   }
+}
+
+#Program .ProgramImage {
+  width: 25rem;
+  border-radius: 2rem;
+}
+#Program .ProgramTitle {
+  margin-top: 1rem;
+  margin-bottom: 0.4rem;
+  font-size: 2.3rem;
+  font-weight: 800;
+}
+#Program .ProgramTime {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+#FormWrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 3.5rem;
+  width: 80%;
+}
+#FormWrapper .FormLabel {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.6rem;
+  font-size: 1.5rem;
+}
+#FormWrapper .FormLabel .FormInput {
+  padding: 1.2rem;
+  border-radius: 1rem;
+  border: 1px solid #bbbbbb;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+#FormWrapper .FormLabel .FormInput::placeholder {
+  color: #bbbbbb;
+}
+#FormWrapper .FormLabel .FormInput:active {
+  outline: 1px #4382C3 solid;
+}
+#FormWrapper .FormLabel .FormInput:focus {
+  outline: 1px #7bb9fc solid;
+}
+#FormWrapper .FormLabel .FormMessage {
+  padding: 1.2rem;
+  height: 14rem;
+  border-radius: 1rem;
+  border: 1px solid #bbbbbb;
+  font-family: "Inter", sans-serif;
+  resize: none;
+  overflow: hidden;
+}
+#FormWrapper .FormLabel .FormMessage::placeholder {
+  color: #bbbbbb;
+  font-family: "Inter", sans-serif;
+}
+#FormWrapper .FormLabel .FormMessage:active {
+  outline: 1px #4382C3 solid;
+}
+#FormWrapper .FormLabel .FormMessage:focus {
+  outline: 1px #7bb9fc solid;
+}
+#FormWrapper .FormLabel .FormButton {
+  background-color: #4382C3;
+  border: none;
+  padding: 0.7rem;
+  border-radius: 1rem;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 1.9rem;
+  width: 35%;
+}
+
+#FormWrapper .FormLabel:last-child {
+  margin-top: 1rem;
+  align-items: end;
+}
+
+#Landing {
+  width: 100vw;
+  overflow: hidden;
+}
+
+#Radio {
+  width: 100vw;
+  margin-top: 13vh;
+  overflow: hidden;
+}
+#Radio .Player {
+  height: 65vh;
+  margin-inline: -1rem;
+}
+#Radio .Player .PlayerIframe {
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+#Radio .Programs {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 8rem;
+  margin-block: 10rem;
+}
+
+#Contact {
+  width: 100vw;
+  overflow: hidden;
+}
+#Contact .Form {
+  height: 85vh;
+  margin-top: 10vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: start;
+  align-items: center;
+}
+#Contact .Form .FormTitle {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+}
+#Contact .Map {
+  height: 60vh;
+  margin-bottom: 5rem;
+}
+#Contact .Map .MapIframe {
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

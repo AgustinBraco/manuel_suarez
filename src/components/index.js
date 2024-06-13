@@ -7,3 +7,5 @@ export { TopScroll } from './TopScroll.jsx';
 export { Header } from './Header.jsx';
 export { PersonLink } from './PersonLink.jsx';
 export { Footer } from './Footer.jsx';
+export { Form } from './Form.jsx';
+export { Program } from './Program.jsx';

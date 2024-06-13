@@ -1,4 +1,4 @@
-.MenuLinksWrapper {
+#MenuLinks {
   display: flex;
   flex-flow: column nowrap;
   height: 70%;
@@ -80,7 +80,7 @@
       }
 
       &:hover {
-        background-color: $grey;
+        background-color: $darkblue;
       }
 
       p {

@@ -1,0 +1,72 @@
+#FormWrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 3.5rem;
+  width: 80%;
+
+  .FormLabel {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0.6rem;
+    font-size: 1.5rem;
+
+    .FormInput {
+      padding: 1.2rem;
+      border-radius: 1rem;
+      border: 1px solid $lightgrey;
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+
+      &::placeholder {
+        color: $lightgrey;
+      }
+
+      &:active {
+        outline: 1px $blue solid;
+      }
+
+      &:focus {
+        outline: 1px $lightblue solid;
+      }
+    }
+
+    .FormMessage {
+      padding: 1.2rem;
+      height: 14rem;
+      border-radius: 1rem;
+      border: 1px solid $lightgrey;
+      font-family: 'Inter', sans-serif;
+      resize: none;
+      overflow: hidden;
+
+      &::placeholder {
+        color: $lightgrey;
+        font-family: 'Inter', sans-serif;
+      }
+
+      &:active {
+        outline: 1px $blue solid;
+      }
+
+      &:focus {
+        outline: 1px $lightblue solid;
+      }
+    }
+
+    .FormButton {
+      background-color: $blue;
+      border: none;
+      padding: 0.7rem;
+      border-radius: 1rem;
+      color: $white;
+      font-weight: 500;
+      font-size: 1.9rem;
+      width: 35%;
+    }
+  }
+}
+
+#FormWrapper .FormLabel:last-child {
+  margin-top: 1rem;
+  align-items: end;
+}

@@ -1,4 +1,31 @@
 #Contact {
-  height: 300rem;
-  background-color: $lightgrey;
+  width: 100vw;
+  overflow: hidden;
+
+  .Form {
+    height: 85vh;
+    margin-top: 10vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: center;
+
+    .FormTitle {
+      font-size: 2.2rem;
+      font-weight: 600;
+      margin-top: 1rem;
+      margin-bottom: 4rem;
+    }
+  }
+
+  .Map {
+    height: 60vh;
+    margin-bottom: 5rem;
+
+    .MapIframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  }
 }
