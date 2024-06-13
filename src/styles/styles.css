@@ -543,7 +543,7 @@ html {
   overflow: hidden;
 }
 #Radio .Player {
-  height: 70vh;
+  height: 65vh;
   margin-inline: -1rem;
 }
 #Radio .Player .PlayerIframe {
