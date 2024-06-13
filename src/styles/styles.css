@@ -539,7 +539,7 @@ html {
 
 #Radio {
   width: 100vw;
-  margin-top: 13vh;
+  margin-top: 10vh;
   overflow: hidden;
 }
 #Radio .Player {
@@ -561,7 +561,7 @@ html {
   margin-block: 10rem;
 }
 #Radio .Programs .ProgramsTitle {
-  font-size: 2.5rem;
+  font-size: 2.7rem;
   text-decoration: underline;
   color: #4382C3;
   font-weight: 600;
