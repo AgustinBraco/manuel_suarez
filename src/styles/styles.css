@@ -449,24 +449,26 @@ html {
 }
 
 #Program .ProgramImage {
-  width: 25rem;
+  width: 22rem;
   border-radius: 2rem;
 }
 #Program .ProgramTitle {
-  margin-top: 1rem;
-  margin-bottom: 0.4rem;
-  font-size: 2.3rem;
+  margin-top: 0.7rem;
+  margin-bottom: 0.3rem;
+  font-size: 2.1rem;
   font-weight: 800;
+  color: #2D3338;
 }
 #Program .ProgramTime {
-  font-size: 1.8rem;
+  color: #2D3338;
+  font-size: 1.7rem;
   font-weight: 500;
 }
 
 #FormWrapper {
   display: flex;
   flex-flow: column nowrap;
-  gap: 3.5rem;
+  gap: 3rem;
   width: 80%;
 }
 #FormWrapper .FormLabel {
@@ -481,8 +483,10 @@ html {
   border: 1px solid #bbbbbb;
   font-family: "Inter", sans-serif;
   font-weight: 500;
+  font-size: 1.6rem;
 }
 #FormWrapper .FormLabel .FormInput::placeholder {
+  font-size: 1.4rem;
   color: #bbbbbb;
 }
 #FormWrapper .FormLabel .FormInput:active {
@@ -493,16 +497,18 @@ html {
 }
 #FormWrapper .FormLabel .FormMessage {
   padding: 1.2rem;
-  height: 14rem;
+  height: 12rem;
   border-radius: 1rem;
   border: 1px solid #bbbbbb;
   font-family: "Inter", sans-serif;
   resize: none;
   overflow: hidden;
+  font-size: 1.6rem;
 }
 #FormWrapper .FormLabel .FormMessage::placeholder {
   color: #bbbbbb;
   font-family: "Inter", sans-serif;
+  font-size: 1.4rem;
 }
 #FormWrapper .FormLabel .FormMessage:active {
   outline: 1px #4382C3 solid;
@@ -522,7 +528,7 @@ html {
 }
 
 #FormWrapper .FormLabel:last-child {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   align-items: end;
 }
 
@@ -537,7 +543,7 @@ html {
   overflow: hidden;
 }
 #Radio .Player {
-  height: 65vh;
+  height: 63dvh;
   margin-inline: -1rem;
 }
 #Radio .Player .PlayerIframe {
@@ -554,13 +560,20 @@ html {
   gap: 8rem;
   margin-block: 10rem;
 }
+#Radio .Programs .ProgramsTitle {
+  font-size: 2.4rem;
+  text-decoration: underline;
+  color: #4382C3;
+  font-weight: 600;
+  margin-bottom: -3rem;
+}
 
 #Contact {
   width: 100vw;
   overflow: hidden;
 }
 #Contact .Form {
-  height: 85vh;
+  height: 85dvh;
   margin-top: 10vh;
   display: flex;
   flex-flow: column nowrap;
@@ -568,10 +581,12 @@ html {
   align-items: center;
 }
 #Contact .Form .FormTitle {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   font-weight: 600;
   margin-top: 1rem;
   margin-bottom: 4rem;
+  text-decoration: underline;
+  color: #4382C3;
 }
 #Contact .Map {
   height: 60vh;

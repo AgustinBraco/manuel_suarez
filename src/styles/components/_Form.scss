@@ -1,7 +1,7 @@
 #FormWrapper {
   display: flex;
   flex-flow: column nowrap;
-  gap: 3.5rem;
+  gap: 3rem;
   width: 80%;
 
   .FormLabel {
@@ -16,8 +16,10 @@
       border: 1px solid $lightgrey;
       font-family: 'Inter', sans-serif;
       font-weight: 500;
+      font-size: 1.6rem;
 
       &::placeholder {
+        font-size: 1.4rem;
         color: $lightgrey;
       }
 
@@ -32,16 +34,18 @@
 
     .FormMessage {
       padding: 1.2rem;
-      height: 14rem;
+      height: 12rem;
       border-radius: 1rem;
       border: 1px solid $lightgrey;
       font-family: 'Inter', sans-serif;
       resize: none;
       overflow: hidden;
+      font-size: 1.6rem;
 
       &::placeholder {
         color: $lightgrey;
         font-family: 'Inter', sans-serif;
+        font-size: 1.4rem;
       }
 
       &:active {
@@ -67,6 +71,6 @@
 }
 
 #FormWrapper .FormLabel:last-child {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   align-items: end;
 }

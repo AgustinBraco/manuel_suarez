@@ -4,7 +4,7 @@
   overflow: hidden;
 
   .Player {
-    height: 65vh;
+    height: 63dvh;
     margin-inline: -1rem;
     
     .PlayerIframe {
@@ -22,5 +22,13 @@
     text-align: center;
     gap: 8rem;
     margin-block: 10rem;
+
+    .ProgramsTitle {
+      font-size: 2.4rem;
+      text-decoration: underline;
+      color: $blue;
+      font-weight: 600;
+      margin-bottom: -3rem;
+    }
   }
 }

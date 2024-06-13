@@ -13,6 +13,7 @@ export const Radio = () => {
       </section>
 
       <section className="Programs">
+        <p className='ProgramsTitle'>Programas</p>
         <Program
           title="Santitodi"
           time="Miércoles de 16 a 17hs"
