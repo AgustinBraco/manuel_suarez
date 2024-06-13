@@ -543,7 +543,7 @@ html {
   overflow: hidden;
 }
 #Radio .Player {
-  height: 63dvh;
+  height: 70vh;
   margin-inline: -1rem;
 }
 #Radio .Player .PlayerIframe {
@@ -561,7 +561,7 @@ html {
   margin-block: 10rem;
 }
 #Radio .Programs .ProgramsTitle {
-  font-size: 2.4rem;
+  font-size: 2.5rem;
   text-decoration: underline;
   color: #4382C3;
   font-weight: 600;
@@ -573,7 +573,7 @@ html {
   overflow: hidden;
 }
 #Contact .Form {
-  height: 85dvh;
+  height: 85vh;
   margin-top: 10vh;
   display: flex;
   flex-flow: column nowrap;
@@ -585,7 +585,6 @@ html {
   font-weight: 600;
   margin-top: 1rem;
   margin-bottom: 4rem;
-  text-decoration: underline;
   color: #4382C3;
 }
 #Contact .Map {

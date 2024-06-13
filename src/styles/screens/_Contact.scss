@@ -3,7 +3,7 @@
   overflow: hidden;
 
   .Form {
-    height: 85dvh;
+    height: 85vh;
     margin-top: 10vh;
     display: flex;
     flex-flow: column nowrap;
@@ -15,7 +15,6 @@
       font-weight: 600;
       margin-top: 1rem;
       margin-bottom: 4rem;
-      text-decoration: underline;
       color: $blue;
     }
   }
