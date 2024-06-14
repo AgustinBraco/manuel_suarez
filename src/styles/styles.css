@@ -369,6 +369,7 @@ html {
   top: 0;
   left: 0;
   width: 100vw;
+  z-index: 999999;
 }
 @media screen and (min-width: 715px) {
   #Header {
@@ -536,6 +537,156 @@ html {
   width: 100vw;
   overflow: hidden;
 }
+#Landing .Home {
+  height: 90vh;
+  margin-top: 10vh;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 4rem;
+  background: linear-gradient(to top, #f2f2f2, #ffffff);
+  position: relative;
+}
+#Landing .Home .HomeTexts {
+  margin-top: 6rem;
+}
+#Landing .Home .HomeTexts .HomeText {
+  margin-block: 0.3rem;
+  font-size: 3rem;
+}
+#Landing .Home .HomeLinks {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+#Landing .Home .HomeLinks .HomeSocial {
+  text-decoration: none;
+  color: #4382C3;
+  font-size: 1.6rem;
+  border: #4382C3 1px solid;
+  padding-inline: 1.4em;
+  padding-block: 0.7rem;
+  border-radius: 1.2rem;
+  font-weight: 500;
+}
+#Landing .Home .HomeLinks .HomeLive {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 1.6rem;
+  background-color: #4382C3;
+  padding-inline: 1.4rem;
+  padding-block: 0.7rem;
+  border-radius: 1.2rem;
+}
+#Landing .Home .HomeImage {
+  background-image: url("/home/home.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100vw;
+  height: 45vh;
+}
+#Landing .History {
+  background: linear-gradient(to bottom, #f9f9f9, #ffffff);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+#Landing .History .HistoryTitle {
+  font-size: 2.8rem;
+  color: #4382C3;
+  font-weight: 600;
+  margin-block: 4rem;
+}
+#Landing .History .HistoryText {
+  margin-block: 2rem;
+  margin-inline: 4rem;
+  font-size: 1.5rem;
+}
+#Landing .History .HistoryImage {
+  border-radius: 2rem;
+  margin-bottom: 4rem;
+  width: 80%;
+}
+#Landing .Library {
+  background: linear-gradient(to top, #f2f2f2, #ffffff);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
+}
+#Landing .Library .LibraryTitle {
+  font-size: 2.6rem;
+  color: #4382C3;
+  font-weight: 600;
+}
+#Landing .Library .LibraryText {
+  margin: 4rem;
+  font-size: 1.5rem;
+}
+#Landing .Library .LibraryImage {
+  border-radius: 2rem;
+  margin-top: 3rem;
+  width: 70%;
+}
+#Landing .Library img:last-child {
+  width: 85%;
+}
+#Landing .Ceramic {
+  background-color: #f2f2f2;
+  padding-top: 8rem;
+  padding-bottom: 4rem;
+}
+#Landing .Ceramic .CeramicWrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#Landing .Ceramic .CeramicWrapper .CeramicTitle {
+  font-size: 2.4rem;
+  color: #4382C3;
+  font-weight: 600;
+}
+#Landing .Ceramic .CeramicWrapper .CeramicImage {
+  width: 10rem;
+  border-radius: 2.5rem;
+}
+#Landing .Ceramic .CeramicText {
+  margin: 4rem;
+  font-size: 1.4rem;
+}
+#Landing .Radio {
+  background: linear-gradient(to bottom, #f2f2f2, #ffffff);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+#Landing .Radio .RadioTitle {
+  font-size: 2.8rem;
+  color: #4382C3;
+  font-weight: 600;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+#Landing .Radio .RadioText {
+  margin-block: 2rem;
+  margin-inline: 4rem;
+  font-size: 1.5rem;
+}
+#Landing .Radio .RadioImage {
+  border-radius: 2rem;
+  margin-bottom: 4rem;
+  width: 80%;
+}
 
 #Radio {
   width: 100vw;
@@ -558,7 +709,7 @@ html {
   align-items: center;
   text-align: center;
   gap: 8rem;
-  margin-block: 10rem;
+  margin-block: 8rem;
 }
 #Radio .Programs .ProgramsTitle {
   font-size: 2.7rem;

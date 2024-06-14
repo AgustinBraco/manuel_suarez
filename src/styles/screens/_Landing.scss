@@ -1,4 +1,179 @@
 #Landing {
   width: 100vw;
   overflow: hidden;
+
+  .Home {
+    height: 90vh;
+    margin-top: 10vh;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 4rem;
+    background: linear-gradient(to top, $background, $white);
+    position: relative;
+
+    .HomeTexts {
+      margin-top: 6rem;
+
+      .HomeText {
+        margin-block: 0.3rem;
+        font-size: 3rem;
+      }
+    }
+
+    .HomeLinks {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+
+      .HomeSocial {
+        text-decoration: none;
+        color: $blue;
+        font-size: 1.6rem;
+        border: $blue 1px solid;
+        padding-inline: 1.4em;
+        padding-block: 0.7rem;
+        border-radius: 1.2rem;
+        font-weight: 500;
+      }
+
+      .HomeLive {
+        text-decoration: none;
+        color: $white;
+        font-weight: 500;
+        font-size: 1.6rem;
+        background-color: $blue;
+        padding-inline: 1.4rem;
+        padding-block: 0.7rem;
+        border-radius: 1.2rem;
+      }
+    }
+
+    .HomeImage {
+      background-image: url('/home/home.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 100vw;
+      height: 45vh;
+    }
+  }
+
+  .History {
+    background: linear-gradient(to bottom, $transition, $white);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    .HistoryTitle {
+      font-size: 2.8rem;
+      color: $blue;
+      font-weight: 600;
+      margin-block: 4rem;
+    }
+
+    .HistoryText {
+      margin-block: 2rem;
+      margin-inline: 4rem;
+      font-size: 1.5rem;
+    }
+
+    .HistoryImage {
+      border-radius: 2rem;
+      margin-bottom: 4rem;
+      width: 80%;
+    }
+  }
+
+  .Library {
+    background: linear-gradient(to top, $background, $white);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+
+    .LibraryTitle {
+      font-size: 2.6rem;
+      color: $blue;
+      font-weight: 600;
+    }
+
+    .LibraryText {
+      margin: 4rem;
+      font-size: 1.5rem;
+    }
+
+    .LibraryImage {
+      border-radius: 2rem;
+      margin-top: 3rem;
+      width: 70%;
+    }
+
+    img:last-child {
+      width: 85%;
+    }
+  }
+
+  .Ceramic {
+    background-color: $background;
+    padding-top: 8rem;
+    padding-bottom: 4rem;
+
+    .CeramicWrapper {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+
+      .CeramicTitle {
+        font-size: 2.4rem;
+        color: $blue;
+        font-weight: 600;
+      }
+
+      .CeramicImage {
+        width: 10rem;
+        border-radius: 2.5rem;
+      }
+    }
+
+    .CeramicText {
+      margin: 4rem;
+      font-size: 1.4rem;
+    }
+  }
+
+  .Radio {
+    background: linear-gradient(to bottom, $background, $white);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    .RadioTitle {
+      font-size: 2.8rem;
+      color: $blue;
+      font-weight: 600;
+      margin-top: 4rem;
+      margin-bottom: 2rem;
+    }
+
+    .RadioText {
+      margin-block: 2rem;
+      margin-inline: 4rem;
+      font-size: 1.5rem;
+    }
+
+    .RadioImage {
+      border-radius: 2rem;
+      margin-bottom: 4rem;
+      width: 80%;
+    }
+  }
 }
