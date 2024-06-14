@@ -2,6 +2,10 @@
   .ProgramImage {
     width: 22rem;
     border-radius: 2rem;
+
+    @include responsive(lg) {
+      width: 24rem;
+    }
   }
 
   .ProgramTitle {
@@ -10,6 +14,12 @@
     font-size: 2.1rem;
     font-weight: 800;
     color: $grey;
+
+    @include responsive(lg) {
+    font-size: 2.2rem;
+      margin-top: 1.2rem;
+      margin-bottom: 0.4rem;
+    }
   }
 
   .ProgramTime {

@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Logo, MenuMobile, MenuLinks } from '.';
 
 export const Header = () => {
-  const isMenuMobile = window.innerWidth < 915;
+  const isMenuMobile = window.innerWidth < 1070;
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {

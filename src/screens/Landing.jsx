@@ -33,7 +33,6 @@ export const Landing = () => {
           <Link to="https://www.youtube.com/@fmlamosca" target='_blank' className='HomeSocialYT'></Link>
           <Link to="https://www.twitch.tv/fmlamosca" target='_blank' className='HomeSocialTW'></Link>
         </div>
-        <div className="HomeImage"></div>
       </section>
 
       <section className="History">

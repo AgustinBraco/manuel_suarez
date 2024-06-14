@@ -11,7 +11,7 @@
   width: 100vw;
   z-index: 999999;
 
-  @include responsive(md) {
+  @include responsive(lg) {
     padding: 5rem;
   }
 }

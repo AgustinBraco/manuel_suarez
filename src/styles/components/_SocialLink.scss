@@ -10,7 +10,7 @@
   padding-right: 0.5rem;
   cursor: $pointer, pointer;
 
-  @include responsive(md) {
+  @include responsive(lg) {
     position: relative;
     overflow: hidden;
     font-size: 1.8rem;
@@ -22,14 +22,14 @@
     font-weight: bold;
     font-size: 2rem;
 
-    @include responsive(md) {
+    @include responsive(lg) {
       font-size: 2rem;
       transform: rotate(-20deg);
     }
   }
 
   &:hover::after {
-    @include responsive(md) {
+    @include responsive(lg) {
       transform: rotate(0deg);
       transition: linear all 0.1s;
     }

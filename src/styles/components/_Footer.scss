@@ -2,7 +2,7 @@
   width: 100vw;
   background-color: $white;
 
-  @include responsive(md) {
+  @include responsive(lg) {
     padding-inline: 25rem;
   }
 
@@ -12,7 +12,7 @@
     align-items: center;
     padding: 1.5rem;
 
-    @include responsive(md) {
+    @include responsive(lg) {
       padding-inline: 12rem;
       padding-block: 2.5rem;
     }
@@ -23,7 +23,7 @@
       text-align: end;
       gap: 1rem;
 
-      @include responsive(md) {
+      @include responsive(lg) {
         gap: 1.5rem;
       }
     }
@@ -36,8 +36,8 @@
     margin-inline: 3.5rem;
     border-radius: 1rem;
 
-    @include responsive(md) {
-      height: 0.2rem;
+    @include responsive(lg) {
+      height: 0.1rem;
       margin-inline: 15rem;
       margin-block: 1.5rem;
     }
@@ -48,7 +48,7 @@
     justify-content: space-between;
     padding: 1.5rem;
 
-    @include responsive(md) {
+    @include responsive(lg) {
       margin-inline: 14rem;
       margin-block: 0.5rem;
     }

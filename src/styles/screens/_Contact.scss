@@ -16,6 +16,12 @@
       margin-top: 1rem;
       margin-bottom: 4rem;
       color: $blue;
+
+      @include responsive(lg) {
+        font-size: 2.6rem;
+        margin-top: 3rem;
+        margin-bottom: 6rem;
+      }
     }
   }
 
@@ -23,10 +29,20 @@
     height: 60vh;
     margin-bottom: 5rem;
 
+    @include responsive(lg) {
+      text-align: center;
+      height: 55vh;
+      margin-bottom: 8rem;
+    }
+
     .MapIframe {
       width: 100%;
       height: 100%;
       border: none;
+
+      @include responsive(lg) {
+        width: 55%;
+      }
     }
   }
 }

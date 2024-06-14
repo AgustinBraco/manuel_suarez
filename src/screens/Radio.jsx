@@ -6,6 +6,7 @@ export const Radio = () => {
   return (
     <main id="Radio">
       <section className="Player">
+        <p className='PlayerTitle'>FM La Mosca 93.5</p>
         <iframe
           className="PlayerIframe"
           src="https://streamingargentino.info/html5/la_mosca/index.html"
@@ -13,25 +14,26 @@ export const Radio = () => {
       </section>
 
       <section className="Programs">
-        <p className='ProgramsTitle'>Programas</p>
-        <Program
-          title="Santitodi"
-          time="Miércoles de 16 a 17hs"
-          image="santitodi"
-        />
+        <p className="ProgramsTitle">Programas</p>
+        <div className='ProgramsWrapper'>
+          <Program
+            title="Santitodi"
+            time="Miércoles de 16 a 17hs"
+            image="santitodi"
+          />
 
-        <Program
-          title="Periodismo en movimiento"
-          time="Sábado de 16 a 17hs"
-          image="movimiento"
-        />
+          <Program
+            title="Periodismo en movimiento"
+            time="Sábado de 16 a 17hs"
+            image="movimiento"
+          />
 
-        <Program
-          title="Sin careta"
-          time="Sábado 17 a 19hs"
-          image="sincareta"
-        />
-
+          <Program
+            title="Sin careta"
+            time="Sábado 17 a 19hs"
+            image="sincareta"
+          />
+        </div>
       </section>
     </main>
   );

@@ -1,8 +1,7 @@
 $breakpoints: (
-  sm: 515px,
-  md: 715px,
-  lg: 915px,
-  xl: 1215px,
+  sm: 470px,
+  md: 770px,
+  lg: 1070px,
 );
 
 @mixin responsive($breakpoint) {

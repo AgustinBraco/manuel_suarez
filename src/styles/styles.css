@@ -95,7 +95,7 @@ html {
   width: 5rem;
   height: 5rem;
 }
-@media screen and (min-width: 715px) {
+@media screen and (min-width: 1070px) {
   #Logo .LogoImage {
     width: 6rem;
     height: 6rem;
@@ -104,7 +104,7 @@ html {
 #Logo .LogoWrapper {
   display: none;
 }
-@media screen and (min-width: 715px) {
+@media screen and (min-width: 1070px) {
   #Logo .LogoWrapper {
     display: flex;
     flex-flow: column;
@@ -130,7 +130,7 @@ html {
   padding-right: 0.5rem;
   cursor: url("/pointer.png"), pointer;
 }
-@media screen and (min-width: 715px) {
+@media screen and (min-width: 1070px) {
   #SocialLink {
     position: relative;
     overflow: hidden;
@@ -143,13 +143,13 @@ html {
   font-weight: bold;
   font-size: 2rem;
 }
-@media screen and (min-width: 715px) {
+@media screen and (min-width: 1070px) {
   #SocialLink::after {
     font-size: 2rem;
     transform: rotate(-20deg);
   }
 }
-@media screen and (min-width: 715px) {
+@media screen and (min-width: 1070px) {
   #SocialLink:hover::after {
     transform: rotate(0deg);
     transition: linear all 0.1s;
@@ -219,7 +219,7 @@ html {
   height: 70%;
   justify-content: space-evenly;
 }
-@media screen and (min-width: 715px) {
+@media screen and (min-width: 1070px) {
   #MenuLinks {
     flex-flow: row nowrap;
     display: flex;
@@ -240,7 +240,7 @@ html {
   gap: 1rem;
   cursor: url("/pointer.png"), pointer;
 }
-@media screen and (min-width: 715px) {
+@media screen and (min-width: 1070px) {
   #MenuLinks .MenuLink {
     font-size: 1.6rem;
     padding-right: 0rem;
@@ -269,7 +269,7 @@ html {
   opacity: 0.5;
   animation: pulse 12s infinite;
 }
-@media screen and (min-width: 715px) {
+@media screen and (min-width: 1070px) {
   #MenuLinks .MenuLink .MenuCircle {
     display: none;
   }
@@ -278,7 +278,7 @@ html {
   color: #4382C3;
   font-size: 2.2rem;
 }
-@media screen and (min-width: 715px) {
+@media screen and (min-width: 1070px) {
   #MenuLinks .MenuLinkContact {
     position: relative;
     color: #ffffff;
@@ -371,7 +371,7 @@ html {
   width: 100vw;
   z-index: 999999;
 }
-@media screen and (min-width: 715px) {
+@media screen and (min-width: 1070px) {
   #Header {
     padding: 5rem;
   }
@@ -385,7 +385,7 @@ html {
 #PersonLink .PersonLinkText {
   font-size: 1.3rem;
 }
-@media screen and (min-width: 715px) {
+@media screen and (min-width: 1070px) {
   #PersonLink .PersonLinkText {
     font-size: 1.5rem;
   }
@@ -395,7 +395,7 @@ html {
   width: 100vw;
   background-color: #ffffff;
 }
-@media screen and (min-width: 715px) {
+@media screen and (min-width: 1070px) {
   #Footer {
     padding-inline: 25rem;
   }
@@ -406,7 +406,7 @@ html {
   align-items: center;
   padding: 1.5rem;
 }
-@media screen and (min-width: 715px) {
+@media screen and (min-width: 1070px) {
   #Footer .FooterTop {
     padding-inline: 12rem;
     padding-block: 2.5rem;
@@ -418,7 +418,7 @@ html {
   text-align: end;
   gap: 1rem;
 }
-@media screen and (min-width: 715px) {
+@media screen and (min-width: 1070px) {
   #Footer .FooterTop .FooterTopWrapper {
     gap: 1.5rem;
   }
@@ -430,9 +430,9 @@ html {
   margin-inline: 3.5rem;
   border-radius: 1rem;
 }
-@media screen and (min-width: 715px) {
+@media screen and (min-width: 1070px) {
   #Footer .FooterLine {
-    height: 0.2rem;
+    height: 0.1rem;
     margin-inline: 15rem;
     margin-block: 1.5rem;
   }
@@ -442,7 +442,7 @@ html {
   justify-content: space-between;
   padding: 1.5rem;
 }
-@media screen and (min-width: 715px) {
+@media screen and (min-width: 1070px) {
   #Footer .FooterBottom {
     margin-inline: 14rem;
     margin-block: 0.5rem;
@@ -453,12 +453,24 @@ html {
   width: 22rem;
   border-radius: 2rem;
 }
+@media screen and (min-width: 1070px) {
+  #Program .ProgramImage {
+    width: 24rem;
+  }
+}
 #Program .ProgramTitle {
   margin-top: 0.7rem;
   margin-bottom: 0.3rem;
   font-size: 2.1rem;
   font-weight: 800;
   color: #2D3338;
+}
+@media screen and (min-width: 1070px) {
+  #Program .ProgramTitle {
+    font-size: 2.2rem;
+    margin-top: 1.2rem;
+    margin-bottom: 0.4rem;
+  }
 }
 #Program .ProgramTime {
   color: #2D3338;
@@ -472,11 +484,21 @@ html {
   gap: 3rem;
   width: 80%;
 }
+@media screen and (min-width: 1070px) {
+  #FormWrapper {
+    width: 30%;
+  }
+}
 #FormWrapper .FormLabel {
   display: flex;
   flex-flow: column nowrap;
   gap: 0.6rem;
   font-size: 1.5rem;
+}
+@media screen and (min-width: 1070px) {
+  #FormWrapper .FormLabel {
+    font-size: 1.7rem;
+  }
 }
 #FormWrapper .FormLabel .FormInput {
   padding: 1.2rem;
@@ -526,6 +548,12 @@ html {
   font-weight: 500;
   font-size: 1.9rem;
   width: 35%;
+  cursor: url("/pointer.png"), pointer;
+}
+@media screen and (min-width: 1070px) {
+  #FormWrapper .FormLabel .FormButton {
+    width: 20%;
+  }
 }
 
 #FormWrapper .FormLabel:last-child {
@@ -544,20 +572,43 @@ html {
   flex-flow: column nowrap;
   align-items: center;
   gap: 4rem;
-  background: linear-gradient(to top, #f2f2f2, #ffffff);
   position: relative;
+  background-image: url("/home/mobile.png");
+  background-size: contain;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+@media screen and (min-width: 1070px) {
+  #Landing .Home {
+    background-image: url("/home/desktop.png");
+    align-items: start;
+    padding-block: 10rem;
+    padding-inline: 15rem;
+  }
 }
 #Landing .Home .HomeTexts {
   margin-top: 6rem;
+  text-align: center;
 }
 #Landing .Home .HomeTexts .HomeText {
   margin-block: 0.3rem;
   font-size: 3rem;
 }
+@media screen and (min-width: 1070px) {
+  #Landing .Home .HomeTexts .HomeText {
+    font-size: 4rem;
+  }
+}
 #Landing .Home .HomeLinks {
   display: flex;
   align-items: center;
   gap: 2rem;
+}
+@media screen and (min-width: 1070px) {
+  #Landing .Home .HomeLinks {
+    margin-left: 2rem;
+    gap: 3rem;
+  }
 }
 #Landing .Home .HomeLinks .HomeSocial {
   text-decoration: none;
@@ -568,6 +619,7 @@ html {
   padding-block: 0.7rem;
   border-radius: 1.2rem;
   font-weight: 500;
+  cursor: url("/pointer.png"), pointer;
 }
 #Landing .Home .HomeLinks .HomeLive {
   text-decoration: none;
@@ -579,10 +631,17 @@ html {
   padding-inline: 1.4rem;
   padding-block: 0.7rem;
   border-radius: 1.2rem;
+  cursor: url("/pointer.png"), pointer;
 }
 #Landing .Home .HomeSocials {
   display: flex;
   gap: 2.5rem;
+}
+@media screen and (min-width: 1070px) {
+  #Landing .Home .HomeSocials {
+    margin-left: 2rem;
+    gap: 3.3rem;
+  }
 }
 #Landing .Home .HomeSocials .HomeSocialIG,
 #Landing .Home .HomeSocials .HomeSocialFB,
@@ -593,6 +652,16 @@ html {
   background-position: center;
   width: 3.5rem;
   height: 3.5rem;
+  cursor: url("/pointer.png"), pointer;
+}
+@media screen and (min-width: 1070px) {
+  #Landing .Home .HomeSocials .HomeSocialIG,
+  #Landing .Home .HomeSocials .HomeSocialFB,
+  #Landing .Home .HomeSocials .HomeSocialYT,
+  #Landing .Home .HomeSocials .HomeSocialTW {
+    width: 4rem;
+    height: 4rem;
+  }
 }
 #Landing .Home .HomeSocials .HomeSocialIG {
   background-image: url("/icons/instagram.png");
@@ -606,19 +675,8 @@ html {
 #Landing .Home .HomeSocials .HomeSocialTW {
   background-image: url("/icons/twitch.png");
 }
-#Landing .Home .HomeImage {
-  background-image: url("/home/home.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 100vw;
-  height: 45vh;
-}
 #Landing .History {
-  background: linear-gradient(to bottom, #f9f9f9, #ffffff);
+  background-color: #f9f9f9;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -631,18 +689,35 @@ html {
   font-weight: 600;
   margin-block: 4rem;
 }
+@media screen and (min-width: 1070px) {
+  #Landing .History .HistoryTitle {
+    font-size: 3.2rem;
+    margin-top: 8rem;
+  }
+}
 #Landing .History .HistoryText {
   margin-block: 2rem;
   margin-inline: 4rem;
   font-size: 1.5rem;
+}
+@media screen and (min-width: 1070px) {
+  #Landing .History .HistoryText {
+    font-size: 1.8rem;
+    width: 35%;
+  }
 }
 #Landing .History .HistoryImage {
   border-radius: 2rem;
   margin-bottom: 4rem;
   width: 80%;
 }
+@media screen and (min-width: 1070px) {
+  #Landing .History .HistoryImage {
+    width: 35%;
+    margin-bottom: 8rem;
+  }
+}
 #Landing .Library {
-  background: linear-gradient(to top, #f2f2f2, #ffffff);
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -654,43 +729,97 @@ html {
   color: #4382C3;
   font-weight: 600;
 }
+@media screen and (min-width: 1070px) {
+  #Landing .Library .LibraryTitle {
+    font-size: 3.2rem;
+    margin-top: 1.5rem;
+  }
+}
 #Landing .Library .LibraryText {
   margin: 4rem;
   font-size: 1.5rem;
+}
+@media screen and (min-width: 1070px) {
+  #Landing .Library .LibraryText {
+    font-size: 1.8rem;
+    width: 35%;
+  }
 }
 #Landing .Library .LibraryImage {
   border-radius: 2rem;
   margin-top: 3rem;
   width: 70%;
 }
+@media screen and (min-width: 1070px) {
+  #Landing .Library .LibraryImage {
+    width: 35%;
+    margin-bottom: 4rem;
+  }
+}
 #Landing .Library img:last-child {
   width: 85%;
 }
+@media screen and (min-width: 1070px) {
+  #Landing .Library img:last-child {
+    width: 40%;
+    margin-bottom: 4rem;
+  }
+}
 #Landing .Ceramic {
-  background-color: #f2f2f2;
+  background-color: #f9f9f9;
   padding-top: 8rem;
   padding-bottom: 4rem;
+}
+@media screen and (min-width: 1070px) {
+  #Landing .Ceramic {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 5rem;
+  }
 }
 #Landing .Ceramic .CeramicWrapper {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
+@media screen and (min-width: 1070px) {
+  #Landing .Ceramic .CeramicWrapper {
+    justify-content: center;
+    gap: 15rem;
+  }
+}
 #Landing .Ceramic .CeramicWrapper .CeramicTitle {
   font-size: 2.4rem;
   color: #4382C3;
   font-weight: 600;
 }
+@media screen and (min-width: 1070px) {
+  #Landing .Ceramic .CeramicWrapper .CeramicTitle {
+    font-size: 3.2rem;
+  }
+}
 #Landing .Ceramic .CeramicWrapper .CeramicImage {
   width: 10rem;
   border-radius: 2.5rem;
+}
+@media screen and (min-width: 1070px) {
+  #Landing .Ceramic .CeramicWrapper .CeramicImage {
+    width: 16rem;
+  }
 }
 #Landing .Ceramic .CeramicText {
   margin: 4rem;
   font-size: 1.5rem;
 }
+@media screen and (min-width: 1070px) {
+  #Landing .Ceramic .CeramicText {
+    margin: 2rem;
+    font-size: 1.8rem;
+    width: 35%;
+  }
+}
 #Landing .Radio {
-  background: linear-gradient(to bottom, #f2f2f2, #ffffff);
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -704,15 +833,33 @@ html {
   margin-top: 4rem;
   margin-bottom: 2rem;
 }
+@media screen and (min-width: 1070px) {
+  #Landing .Radio .RadioTitle {
+    font-size: 3.2rem;
+    margin-top: 8rem;
+  }
+}
 #Landing .Radio .RadioText {
   margin-block: 2rem;
   margin-inline: 4rem;
   font-size: 1.5rem;
 }
+@media screen and (min-width: 1070px) {
+  #Landing .Radio .RadioText {
+    font-size: 1.8rem;
+    width: 35%;
+  }
+}
 #Landing .Radio .RadioImage {
   border-radius: 2rem;
   margin-bottom: 4rem;
   width: 80%;
+}
+@media screen and (min-width: 1070px) {
+  #Landing .Radio .RadioImage {
+    width: 35%;
+    margin-bottom: 8rem;
+  }
 }
 
 #Radio {
@@ -720,9 +867,36 @@ html {
   margin-top: 10vh;
   overflow: hidden;
 }
+@media screen and (min-width: 1070px) {
+  #Radio {
+    margin-top: 15vh;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+}
 #Radio .Player {
-  height: 65vh;
+  height: 70vh;
   margin-inline: -1rem;
+}
+@media screen and (min-width: 1070px) {
+  #Radio .Player {
+    width: 40vw;
+  }
+}
+#Radio .Player .PlayerTitle {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+  color: #4382C3;
+  text-align: center;
+}
+@media screen and (min-width: 1070px) {
+  #Radio .Player .PlayerTitle {
+    font-size: 2.6rem;
+    margin-bottom: 5rem;
+  }
 }
 #Radio .Player .PlayerIframe {
   border: none;
@@ -738,11 +912,34 @@ html {
   gap: 8rem;
   margin-block: 8rem;
 }
+@media screen and (min-width: 1070px) {
+  #Radio .Programs {
+    margin-bottom: 12rem;
+    gap: 5rem;
+  }
+}
 #Radio .Programs .ProgramsTitle {
   font-size: 2.7rem;
   color: #4382C3;
   font-weight: 600;
   margin-bottom: -3rem;
+}
+@media screen and (min-width: 1070px) {
+  #Radio .Programs .ProgramsTitle {
+    font-size: 2.8rem;
+    margin-bottom: 0rem;
+  }
+}
+#Radio .Programs .ProgramsWrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 8rem;
+}
+@media screen and (min-width: 1070px) {
+  #Radio .Programs .ProgramsWrapper {
+    flex-flow: row nowrap;
+    gap: 14rem;
+  }
 }
 
 #Contact {
@@ -764,14 +961,33 @@ html {
   margin-bottom: 4rem;
   color: #4382C3;
 }
+@media screen and (min-width: 1070px) {
+  #Contact .Form .FormTitle {
+    font-size: 2.6rem;
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+  }
+}
 #Contact .Map {
   height: 60vh;
   margin-bottom: 5rem;
+}
+@media screen and (min-width: 1070px) {
+  #Contact .Map {
+    text-align: center;
+    height: 55vh;
+    margin-bottom: 8rem;
+  }
 }
 #Contact .Map .MapIframe {
   width: 100%;
   height: 100%;
   border: none;
+}
+@media screen and (min-width: 1070px) {
+  #Contact .Map .MapIframe {
+    width: 55%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

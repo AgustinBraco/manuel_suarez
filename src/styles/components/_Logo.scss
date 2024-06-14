@@ -9,7 +9,7 @@
     width: 5rem;
     height: 5rem;
 
-    @include responsive(md) {
+    @include responsive(lg) {
       width: 6rem;
       height: 6rem;
     }
@@ -18,7 +18,7 @@
   .LogoWrapper {
     display: none;
 
-    @include responsive(md) {
+    @include responsive(lg) {
       display: flex;
       flex-flow: column;
       padding: 1rem;

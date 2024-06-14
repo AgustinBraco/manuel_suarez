@@ -9,15 +9,30 @@
     flex-flow: column nowrap;
     align-items: center;
     gap: 4rem;
-    background: linear-gradient(to top, $background, $white);
     position: relative;
+    background-image: url('/home/mobile.png');
+    background-size: contain;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+
+    @include responsive(lg) {
+      background-image: url('/home/desktop.png');
+      align-items: start;
+      padding-block: 10rem;
+      padding-inline: 15rem;
+    }
 
     .HomeTexts {
       margin-top: 6rem;
+      text-align: center;
 
       .HomeText {
         margin-block: 0.3rem;
         font-size: 3rem;
+
+        @include responsive(lg) {
+          font-size: 4rem;
+        }
       }
     }
 
@@ -25,6 +40,11 @@
       display: flex;
       align-items: center;
       gap: 2rem;
+
+      @include responsive(lg) {
+        margin-left: 2rem;
+        gap: 3rem;
+      }
 
       .HomeSocial {
         text-decoration: none;
@@ -35,6 +55,7 @@
         padding-block: 0.7rem;
         border-radius: 1.2rem;
         font-weight: 500;
+        cursor: $pointer, pointer;
       }
 
       .HomeLive {
@@ -47,12 +68,18 @@
         padding-inline: 1.4rem;
         padding-block: 0.7rem;
         border-radius: 1.2rem;
+        cursor: $pointer, pointer;
       }
     }
 
     .HomeSocials {
       display: flex;
       gap: 2.5rem;
+
+      @include responsive(lg) {
+        margin-left: 2rem;
+        gap: 3.3rem;
+      }
 
       .HomeSocialIG,
       .HomeSocialFB,
@@ -63,6 +90,12 @@
         background-position: center;
         width: 3.5rem;
         height: 3.5rem;
+        cursor: $pointer, pointer;
+
+        @include responsive(lg) {
+          width: 4rem;
+          height: 4rem;
+        }
       }
 
       .HomeSocialIG {
@@ -81,22 +114,10 @@
         background-image: url('/icons/twitch.png');
       }
     }
-
-    .HomeImage {
-      background-image: url('/home/home.png');
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      width: 100vw;
-      height: 45vh;
-    }
   }
 
   .History {
-    background: linear-gradient(to bottom, $transition, $white);
+    background-color: $background;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -108,23 +129,37 @@
       color: $blue;
       font-weight: 600;
       margin-block: 4rem;
+
+      @include responsive(lg) {
+        font-size: 3.2rem;
+        margin-top: 8rem;
+      }
     }
 
     .HistoryText {
       margin-block: 2rem;
       margin-inline: 4rem;
       font-size: 1.5rem;
+
+      @include responsive(lg) {
+        font-size: 1.8rem;
+        width: 35%;
+      }
     }
 
     .HistoryImage {
       border-radius: 2rem;
       margin-bottom: 4rem;
       width: 80%;
+
+      @include responsive(lg) {
+        width: 35%;
+        margin-bottom: 8rem;
+      }
     }
   }
 
   .Library {
-    background: linear-gradient(to top, $background, $white);
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -135,21 +170,41 @@
       font-size: 2.6rem;
       color: $blue;
       font-weight: 600;
+
+      @include responsive(lg) {
+        font-size: 3.2rem;
+        margin-top: 1.5rem;
+      }
     }
 
     .LibraryText {
       margin: 4rem;
       font-size: 1.5rem;
+
+      @include responsive(lg) {
+        font-size: 1.8rem;
+        width: 35%;
+      }
     }
 
     .LibraryImage {
       border-radius: 2rem;
       margin-top: 3rem;
       width: 70%;
+
+      @include responsive(lg) {
+        width: 35%;
+        margin-bottom: 4rem;
+      }
     }
 
     img:last-child {
       width: 85%;
+
+      @include responsive(lg) {
+        width: 40%;
+        margin-bottom: 4rem;
+      }
     }
   }
 
@@ -158,31 +213,56 @@
     padding-top: 8rem;
     padding-bottom: 4rem;
 
+    @include responsive(lg) {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      gap: 5rem;
+    }
+
     .CeramicWrapper {
       display: flex;
       justify-content: space-evenly;
       align-items: center;
 
+      @include responsive(lg) {
+        justify-content: center;
+        gap: 15rem;
+      }
+
       .CeramicTitle {
         font-size: 2.4rem;
         color: $blue;
         font-weight: 600;
+
+        @include responsive(lg) {
+          font-size: 3.2rem;
+        }
       }
 
       .CeramicImage {
         width: 10rem;
         border-radius: 2.5rem;
+
+        @include responsive(lg) {
+          width: 16rem;
+        }
       }
     }
 
     .CeramicText {
       margin: 4rem;
       font-size: 1.5rem;
+
+      @include responsive(lg) {
+        margin: 2rem;
+        font-size: 1.8rem;
+        width: 35%;
+      }
     }
   }
 
   .Radio {
-    background: linear-gradient(to bottom, $background, $white);
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -195,18 +275,33 @@
       font-weight: 600;
       margin-top: 4rem;
       margin-bottom: 2rem;
+
+      @include responsive(lg) {
+        font-size: 3.2rem;
+        margin-top: 8rem;
+      }
     }
 
     .RadioText {
       margin-block: 2rem;
       margin-inline: 4rem;
       font-size: 1.5rem;
+
+      @include responsive(lg) {
+        font-size: 1.8rem;
+        width: 35%;
+      }
     }
 
     .RadioImage {
       border-radius: 2rem;
       margin-bottom: 4rem;
       width: 80%;
+
+      @include responsive(lg) {
+        width: 35%;
+        margin-bottom: 8rem;
+      }
     }
   }
 }
