@@ -571,6 +571,7 @@ html {
 }
 #Landing .Home .HomeLinks .HomeLive {
   text-decoration: none;
+  border: #4382C3 1px solid;
   color: #ffffff;
   font-weight: 500;
   font-size: 1.6rem;
@@ -578,6 +579,32 @@ html {
   padding-inline: 1.4rem;
   padding-block: 0.7rem;
   border-radius: 1.2rem;
+}
+#Landing .Home .HomeSocials {
+  display: flex;
+  gap: 2.5rem;
+}
+#Landing .Home .HomeSocials .HomeSocialIG,
+#Landing .Home .HomeSocials .HomeSocialFB,
+#Landing .Home .HomeSocials .HomeSocialYT,
+#Landing .Home .HomeSocials .HomeSocialTW {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+#Landing .Home .HomeSocials .HomeSocialIG {
+  background-image: url("/icons/instagram.png");
+}
+#Landing .Home .HomeSocials .HomeSocialFB {
+  background-image: url("/icons/facebook.png");
+}
+#Landing .Home .HomeSocials .HomeSocialYT {
+  background-image: url("/icons/youtube.png");
+}
+#Landing .Home .HomeSocials .HomeSocialTW {
+  background-image: url("/icons/twitch.png");
 }
 #Landing .Home .HomeImage {
   background-image: url("/home/home.png");
@@ -660,7 +687,7 @@ html {
 }
 #Landing .Ceramic .CeramicText {
   margin: 4rem;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 #Landing .Radio {
   background: linear-gradient(to bottom, #f2f2f2, #ffffff);
@@ -713,7 +740,6 @@ html {
 }
 #Radio .Programs .ProgramsTitle {
   font-size: 2.7rem;
-  text-decoration: underline;
   color: #4382C3;
   font-weight: 600;
   margin-bottom: -3rem;

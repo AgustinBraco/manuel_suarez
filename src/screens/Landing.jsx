@@ -1,6 +1,5 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-// import {  } from '../components';
 
 export const Landing = () => {
   useEffect(() => window.scrollTo(0, 0), []);
@@ -14,6 +13,7 @@ export const Landing = () => {
             <b>Manuel Suarez!</b>
           </p>
         </div>
+
         <div className="HomeLinks">
           <Link
             className="HomeSocial"
@@ -25,6 +25,13 @@ export const Landing = () => {
           <Link className="HomeLive" target="_self" to="/radio">
             Escuchanos
           </Link>
+        </div>
+
+        <div className='HomeSocials'>
+          <Link to="https://www.instagram.com/lamoscaradio" target='_blank' className='HomeSocialIG'></Link>
+          <Link to="https://www.facebook.com/RadioFMLaMosca" target='_blank' className='HomeSocialFB'></Link>
+          <Link to="https://www.youtube.com/@fmlamosca" target='_blank' className='HomeSocialYT'></Link>
+          <Link to="https://www.twitch.tv/fmlamosca" target='_blank' className='HomeSocialTW'></Link>
         </div>
         <div className="HomeImage"></div>
       </section>

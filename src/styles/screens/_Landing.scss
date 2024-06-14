@@ -39,6 +39,7 @@
 
       .HomeLive {
         text-decoration: none;
+        border: $blue 1px solid;
         color: $white;
         font-weight: 500;
         font-size: 1.6rem;
@@ -46,6 +47,38 @@
         padding-inline: 1.4rem;
         padding-block: 0.7rem;
         border-radius: 1.2rem;
+      }
+    }
+
+    .HomeSocials {
+      display: flex;
+      gap: 2.5rem;
+
+      .HomeSocialIG,
+      .HomeSocialFB,
+      .HomeSocialYT,
+      .HomeSocialTW {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 3.5rem;
+        height: 3.5rem;
+      }
+
+      .HomeSocialIG {
+        background-image: url('/icons/instagram.png');
+      }
+
+      .HomeSocialFB {
+        background-image: url('/icons/facebook.png');
+      }
+
+      .HomeSocialYT {
+        background-image: url('/icons/youtube.png');
+      }
+
+      .HomeSocialTW {
+        background-image: url('/icons/twitch.png');
       }
     }
 
@@ -144,7 +177,7 @@
 
     .CeramicText {
       margin: 4rem;
-      font-size: 1.4rem;
+      font-size: 1.5rem;
     }
   }
 
