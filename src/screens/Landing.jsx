@@ -35,6 +35,11 @@ export const Landing = () => {
         </div>
       </section>
 
+      <section className='Activity'>
+        <p className='ActivityTitle'>Novedades</p>
+        <img className='ActivityImage' src="/home/activity.png" alt="Imagen" />
+      </section>
+
       <section className="History">
         <p className="HistoryTitle">Nosotros</p>
 

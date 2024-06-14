@@ -116,6 +116,40 @@
     }
   }
 
+  .Activity {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 10rem;
+
+    @include responsive(lg) {
+      padding: 12rem;
+    }
+
+    .ActivityTitle {
+      font-size: 2.8rem;
+      color: $blue;
+      font-weight: 600;
+      margin-bottom: 4rem;
+
+      @include responsive(lg) {
+        font-size: 3.2rem;
+        margin-top: 4rem;
+        margin-bottom: 6rem;
+      }
+    }
+
+    .ActivityImage {
+      width: 70vw;
+      border-radius: 1rem;
+
+      @include responsive(lg) {
+        width: 20vw;
+        border-radius: 2rem;
+      }
+    }
+  }
+
   .History {
     background-color: $background;
     display: flex;

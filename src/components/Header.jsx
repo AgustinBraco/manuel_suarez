@@ -12,10 +12,14 @@ export const Header = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
+  const ToggleMenu = () => {
+    return;
+  };
+
   return (
     <header id="Header">
       <Logo />
-      {isMenuMobile ? <MenuMobile /> : <MenuLinks />}
+      {isMenuMobile ? <MenuMobile /> : <MenuLinks ToggleMenu={ToggleMenu} />}
     </header>
   );
 };

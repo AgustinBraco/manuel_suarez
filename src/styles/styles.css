@@ -675,6 +675,40 @@ html {
 #Landing .Home .HomeSocials .HomeSocialTW {
   background-image: url("/icons/twitch.png");
 }
+#Landing .Activity {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding: 10rem;
+}
+@media screen and (min-width: 1070px) {
+  #Landing .Activity {
+    padding: 12rem;
+  }
+}
+#Landing .Activity .ActivityTitle {
+  font-size: 2.8rem;
+  color: #4382C3;
+  font-weight: 600;
+  margin-bottom: 4rem;
+}
+@media screen and (min-width: 1070px) {
+  #Landing .Activity .ActivityTitle {
+    font-size: 3.2rem;
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+  }
+}
+#Landing .Activity .ActivityImage {
+  width: 70vw;
+  border-radius: 1rem;
+}
+@media screen and (min-width: 1070px) {
+  #Landing .Activity .ActivityImage {
+    width: 20vw;
+    border-radius: 2rem;
+  }
+}
 #Landing .History {
   background-color: #f9f9f9;
   display: flex;
